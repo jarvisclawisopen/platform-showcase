@@ -1,9 +1,6 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import MeshGradient from './components/aceternity/MeshGradient';
-import Spotlight from './components/aceternity/Spotlight';
 import Hero from './components/Hero';
 import FilterBar from './components/FilterBar';
 import AppCard from './components/AppCard';
@@ -28,19 +25,16 @@ export default function Home() {
   useEffect(() => {
     const loadedApps = appsData as App[];
     
-    // Load favorites from localStorage
     const savedFavorites = localStorage.getItem('app-favorites');
     if (savedFavorites) {
       setFavorites(new Set(JSON.parse(savedFavorites)));
     }
 
-    // Load votes from localStorage
     const savedVotes = localStorage.getItem('app-votes');
     if (savedVotes) {
       const votes = JSON.parse(savedVotes);
       setUserVotes(votes);
       
-      // Apply saved votes to apps
       const appsWithVotes = loadedApps.map(app => ({
         ...app,
         votes: votes[app.id] ? app.votes + 1 : app.votes
@@ -53,39 +47,32 @@ export default function Home() {
     setLoading(false);
   }, []);
 
-  // Get unique categories
   const categories = useMemo(() => {
     const cats = new Set(apps.map(app => app.category));
     return Array.from(cats).sort();
   }, [apps]);
 
-  // Filter and sort apps
   const filteredApps = useMemo(() => {
     let filtered = [...apps];
 
-    // Search filter
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
       filtered = filtered.filter(
         app =>
           app.name.toLowerCase().includes(query) ||
           app.description.toLowerCase().includes(query) ||
-          app.detailed.toLowerCase().includes(query) ||
           app.tags.some(tag => tag.toLowerCase().includes(query))
       );
     }
 
-    // Category filter
     if (selectedCategory !== 'all') {
       filtered = filtered.filter(app => app.category === selectedCategory);
     }
 
-    // Favorites filter
     if (showFavoritesOnly) {
       filtered = filtered.filter(app => favorites.has(app.id));
     }
 
-    // Sort
     switch (sortBy) {
       case 'name':
         filtered.sort((a, b) => a.name.localeCompare(b.name));
@@ -96,14 +83,11 @@ export default function Home() {
       case 'votes':
         filtered.sort((a, b) => b.votes - a.votes);
         break;
-      default:
-        break;
     }
 
     return filtered;
   }, [apps, searchQuery, selectedCategory, sortBy, showFavoritesOnly, favorites]);
 
-  // Handle vote
   const handleVote = (id: string) => {
     const hasVoted = userVotes[id];
     const newVotes = { ...userVotes };
@@ -124,7 +108,6 @@ export default function Home() {
     localStorage.setItem('app-votes', JSON.stringify(newVotes));
   };
 
-  // Handle favorite
   const handleFavorite = (id: string) => {
     const newFavorites = new Set(favorites);
     if (newFavorites.has(id)) {
@@ -136,7 +119,6 @@ export default function Home() {
     localStorage.setItem('app-favorites', JSON.stringify(Array.from(newFavorites)));
   };
 
-  // Reset filters
   const resetFilters = () => {
     setSearchQuery('');
     setSelectedCategory('all');
@@ -145,14 +127,8 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen relative overflow-hidden">
-      {/* Mesh gradient background */}
-      <MeshGradient />
-      
-      {/* Spotlight effect */}
-      <Spotlight />
-
-      <div className="relative z-10 container mx-auto px-4 py-16">
+    <main className="min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Hero searchQuery={searchQuery} onSearchChange={setSearchQuery} />
 
         <FilterBar
@@ -173,44 +149,20 @@ export default function Home() {
             onReset={resetFilters}
           />
         ) : (
-          <motion.div
-            className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-            initial="hidden"
-            animate="visible"
-            variants={{
-              visible: {
-                transition: {
-                  staggerChildren: 0.05,
-                },
-              },
-            }}
-          >
-            <AnimatePresence mode="wait">
-              {filteredApps.map((app, index) => (
-                <motion.div
-                  key={app.id}
-                  variants={{
-                    hidden: { opacity: 0, y: 20 },
-                    visible: { opacity: 1, y: 0 },
-                  }}
-                  transition={{ duration: 0.4 }}
-                  layout
-                >
-                  <AppCard
-                    app={app}
-                    onVote={handleVote}
-                    onFavorite={handleFavorite}
-                    onOpenDetail={setSelectedApp}
-                    isFavorited={favorites.has(app.id)}
-                    userVotes={userVotes}
-                  />
-                </motion.div>
-              ))}
-            </AnimatePresence>
-          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredApps.map((app) => (
+              <AppCard
+                key={app.id}
+                app={app}
+                onVote={handleVote}
+                onFavorite={handleFavorite}
+                onOpenDetail={setSelectedApp}
+                isFavorited={favorites.has(app.id)}
+                userVotes={userVotes}
+              />
+            ))}
+          </div>
         )}
-
-        <div className="h-32"></div>
       </div>
 
       <AppModal

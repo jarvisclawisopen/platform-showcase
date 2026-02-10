@@ -9,33 +9,33 @@ interface EmptyStateProps {
 
 export default function EmptyState({ type, onReset }: EmptyStateProps) {
   return (
-    <div className="relative z-10 flex flex-col items-center justify-center py-32 animate-fade-in">
+    <div className="flex flex-col items-center justify-center py-20">
       <div className="text-center max-w-md">
         <div className="mb-6 flex justify-center">
           {type === 'search' ? (
-            <div className="p-6 bg-white/5 rounded-full">
-              <Search size={64} className="text-gray-400" />
+            <div className="p-4 bg-gray-100 rounded-full">
+              <Search size={48} className="text-gray-400" />
             </div>
           ) : (
-            <div className="p-6 bg-white/5 rounded-full">
-              <Heart size={64} className="text-gray-400" />
+            <div className="p-4 bg-pink-50 rounded-full">
+              <Heart size={48} className="text-pink-400" />
             </div>
           )}
         </div>
 
-        <h3 className="text-3xl font-bold text-white mb-4">
+        <h3 className="text-2xl font-bold text-gray-900 mb-3">
           {type === 'search' ? 'No results found' : 'No favorites yet'}
         </h3>
 
-        <p className="text-lg text-gray-400 mb-8">
+        <p className="text-gray-600 mb-8">
           {type === 'search'
-            ? 'Try adjusting your search or filters to find what you\'re looking for.'
+            ? 'Try adjusting your search or filters.'
             : 'Start adding platforms to your favorites by clicking the heart icon.'}
         </p>
 
         <button
           onClick={onReset}
-          className="px-6 py-3 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-purple/50 transition-all duration-300 hover:scale-105 active:scale-95"
+          className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 transition-colors"
         >
           {type === 'search' ? 'Clear filters' : 'Show all platforms'}
         </button>

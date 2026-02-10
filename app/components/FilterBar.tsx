@@ -1,9 +1,6 @@
 'use client';
 
-import { Heart, SlidersHorizontal } from 'lucide-react';
-import { motion } from 'framer-motion';
-import Select from './ui/Select';
-import Button from './ui/Button';
+import { Heart } from 'lucide-react';
 
 interface FilterBarProps {
   category: string;
@@ -24,90 +21,51 @@ export default function FilterBar({
   onToggleFavorites,
   categories,
 }: FilterBarProps) {
-  const categoryOptions = [
-    { value: 'all', label: '🌐 All Categories' },
-    ...categories.map(cat => ({ value: cat, label: cat }))
-  ];
-
-  const sortOptions = [
-    { value: 'default', label: '✨ Default Order' },
-    { value: 'name', label: '🔤 Name (A-Z)' },
-    { value: 'category', label: '📁 Category' },
-    { value: 'votes', label: '🔥 Most Voted' },
-  ];
-
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.3 }}
-      className="relative z-10 mb-20"
-    >
-      {/* Filter bar container with premium glass effect */}
-      <div className="relative group">
-        {/* Glow effect */}
-        <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/30 via-purple-500/30 to-pink-500/30 rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition-all duration-500" />
-        
-        <div className="relative bg-gradient-to-br from-white/10 via-white/5 to-transparent backdrop-blur-2xl border border-white/20 rounded-3xl p-6 shadow-2xl">
-          {/* Top shine */}
-          <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-          
-          <div className="flex flex-col sm:flex-row flex-wrap gap-4 items-center justify-center">
-            {/* Filter icon + label */}
-            <div className="flex items-center gap-2 text-gray-300">
-              <div className="p-2 rounded-xl bg-white/5 border border-white/20">
-                <SlidersHorizontal size={18} />
-              </div>
-              <span className="font-semibold text-sm">Filters</span>
-            </div>
+    <div className="mb-12">
+      <div className="flex flex-wrap gap-3 items-center justify-center">
+        {/* Category Filter */}
+        <select
+          value={category}
+          onChange={(e) => onCategoryChange(e.target.value)}
+          className="px-4 py-2 border-2 border-gray-200 rounded-xl bg-white text-gray-700 font-medium focus:border-indigo-500 focus:outline-none transition-colors"
+        >
+          <option value="all">All Categories</option>
+          {categories.map((cat) => (
+            <option key={cat} value={cat}>
+              {cat}
+            </option>
+          ))}
+        </select>
 
-            {/* Category Filter */}
-            <motion.div 
-              className="w-full sm:w-auto min-w-[220px]"
-              whileHover={{ scale: 1.02 }}
-            >
-              <Select
-                value={category}
-                onChange={onCategoryChange}
-                options={categoryOptions}
-                placeholder="Select category"
-              />
-            </motion.div>
+        {/* Sort Options */}
+        <select
+          value={sortBy}
+          onChange={(e) => onSortChange(e.target.value)}
+          className="px-4 py-2 border-2 border-gray-200 rounded-xl bg-white text-gray-700 font-medium focus:border-indigo-500 focus:outline-none transition-colors"
+        >
+          <option value="default">Default</option>
+          <option value="name">Name (A-Z)</option>
+          <option value="category">Category</option>
+          <option value="votes">Most Voted</option>
+        </select>
 
-            {/* Sort Options */}
-            <motion.div 
-              className="w-full sm:w-auto min-w-[220px]"
-              whileHover={{ scale: 1.02 }}
-            >
-              <Select
-                value={sortBy}
-                onChange={onSortChange}
-                options={sortOptions}
-                placeholder="Sort by"
-              />
-            </motion.div>
-
-            {/* Favorites Toggle */}
-            <Button
-              variant={showFavoritesOnly ? 'gradient' : 'glass'}
-              onClick={onToggleFavorites}
-            >
-              <motion.div
-                animate={showFavoritesOnly ? { scale: [1, 1.2, 1] } : {}}
-                transition={{ duration: 0.3 }}
-              >
-                <Heart
-                  size={18}
-                  className={showFavoritesOnly ? 'fill-white' : ''}
-                />
-              </motion.div>
-              <span className="font-semibold">
-                {showFavoritesOnly ? 'Favorites' : 'All'}
-              </span>
-            </Button>
-          </div>
-        </div>
+        {/* Favorites Toggle */}
+        <button
+          onClick={onToggleFavorites}
+          className={`flex items-center gap-2 px-4 py-2 rounded-xl font-medium transition-colors ${
+            showFavoritesOnly
+              ? 'bg-pink-100 text-pink-600 border-2 border-pink-200'
+              : 'bg-white text-gray-700 border-2 border-gray-200 hover:border-gray-300'
+          }`}
+        >
+          <Heart
+            size={16}
+            className={showFavoritesOnly ? 'fill-pink-600' : ''}
+          />
+          {showFavoritesOnly ? 'Favorites' : 'All'}
+        </button>
       </div>
-    </motion.div>
+    </div>
   );
 }
