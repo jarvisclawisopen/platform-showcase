@@ -1,7 +1,9 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import ParticleBackground from './components/ParticleBackground';
+import { motion, AnimatePresence } from 'framer-motion';
+import BackgroundGradientAnimation from './components/aceternity/BackgroundGradientAnimation';
+import Spotlight from './components/aceternity/Spotlight';
 import Hero from './components/Hero';
 import FilterBar from './components/FilterBar';
 import AppCard from './components/AppCard';
@@ -144,7 +146,11 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-navy relative overflow-hidden">
-      <ParticleBackground />
+      {/* Aceternity animated background */}
+      <BackgroundGradientAnimation />
+      
+      {/* Spotlight effect */}
+      <Spotlight />
 
       <div className="relative z-10 container mx-auto px-4 py-16">
         <Hero searchQuery={searchQuery} onSearchChange={setSearchQuery} />
@@ -167,19 +173,41 @@ export default function Home() {
             onReset={resetFilters}
           />
         ) : (
-          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredApps.map((app) => (
-              <AppCard
-                key={app.id}
-                app={app}
-                onVote={handleVote}
-                onFavorite={handleFavorite}
-                onOpenDetail={setSelectedApp}
-                isFavorited={favorites.has(app.id)}
-                userVotes={userVotes}
-              />
-            ))}
-          </div>
+          <motion.div
+            className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              visible: {
+                transition: {
+                  staggerChildren: 0.05,
+                },
+              },
+            }}
+          >
+            <AnimatePresence mode="wait">
+              {filteredApps.map((app, index) => (
+                <motion.div
+                  key={app.id}
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  transition={{ duration: 0.4 }}
+                  layout
+                >
+                  <AppCard
+                    app={app}
+                    onVote={handleVote}
+                    onFavorite={handleFavorite}
+                    onOpenDetail={setSelectedApp}
+                    isFavorited={favorites.has(app.id)}
+                    userVotes={userVotes}
+                  />
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </motion.div>
         )}
 
         <div className="h-32"></div>
