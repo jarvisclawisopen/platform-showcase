@@ -32,17 +32,17 @@ export default function Grid({ apps, isLoading = false, onOpenDetail }: GridProp
       <div className="container-max px-6">
         <div className="flex flex-col items-center justify-center py-24 text-center">
           <div className="text-6xl mb-6">🔍</div>
-          <h3 className="text-2xl font-semibold text-white mb-2">No platforms found</h3>
-          <p className="text-slate-400 font-normal">Try adjusting your filters or search query</p>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-2">No platforms found</h3>
+          <p className="text-gray-600">Try adjusting your filters or search query</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="container-max px-6 pb-24 relative z-10">
+    <div className="container-max px-6 lg:px-8 pb-24">
       {viewMode === 'grid' ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {apps.map((app, index) => (
             <Card key={app.id} app={app} onOpenDetail={onOpenDetail} index={index} />
           ))}

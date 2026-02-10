@@ -51,12 +51,12 @@ export default function Controls({
       <div className="flex flex-wrap items-center gap-3">
         {/* Sort */}
         <div className="flex items-center gap-2">
-          <span className="text-sm text-slate-400 font-medium">Sort:</span>
+          <span className="text-sm text-gray-600 font-medium">Sort:</span>
           <Select value={sortBy} onValueChange={onSortChange}>
-            <SelectTrigger className="w-[180px] bg-slate-800 border-slate-600 text-white">
+            <SelectTrigger className="w-[180px] bg-white border-gray-300 text-gray-900">
               <SelectValue />
             </SelectTrigger>
-            <SelectContent className="bg-slate-800 border-slate-600">
+            <SelectContent className="bg-white border-gray-300">
               <SelectItem value="name">Name (A-Z)</SelectItem>
               <SelectItem value="category">Category</SelectItem>
               <SelectItem value="pricing">Pricing</SelectItem>
@@ -66,13 +66,13 @@ export default function Controls({
         </div>
 
         {/* View Toggle */}
-        <div className="flex items-center gap-1 bg-slate-800 rounded-lg p-1 border border-slate-600">
+        <div className="flex items-center gap-1 bg-white rounded-lg p-1 border border-gray-300">
           <Button
             variant="ghost"
             size="sm"
             onClick={() => setViewMode('grid')}
             className={`${
-              viewMode === 'grid' ? 'bg-slate-700 text-white' : 'text-slate-400'
+              viewMode === 'grid' ? 'bg-gray-100 text-gray-900' : 'text-gray-500'
             }`}
           >
             <Grid3x3 className="h-4 w-4" />
@@ -82,7 +82,7 @@ export default function Controls({
             size="sm"
             onClick={() => setViewMode('compact')}
             className={`${
-              viewMode === 'compact' ? 'bg-slate-700 text-white' : 'text-slate-400'
+              viewMode === 'compact' ? 'bg-gray-100 text-gray-900' : 'text-gray-500'
             }`}
           >
             <List className="h-4 w-4" />
@@ -96,8 +96,8 @@ export default function Controls({
           onClick={onToggleFavorites}
           className={
             showFavoritesOnly
-              ? 'bg-rose-500 hover:bg-rose-600 text-white border-rose-400'
-              : 'bg-slate-800 border-slate-600 text-slate-300 hover:bg-slate-700'
+              ? 'bg-red-500 hover:bg-red-600 text-white border-red-400'
+              : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
           }
         >
           <Heart className={`h-4 w-4 mr-2 ${showFavoritesOnly ? 'fill-current' : ''}`} />
@@ -110,7 +110,7 @@ export default function Controls({
             variant="ghost"
             size="sm"
             onClick={onClearFilters}
-            className="text-slate-400 hover:text-white"
+            className="text-gray-500 hover:text-gray-900 hover:bg-gray-100"
           >
             <X className="h-4 w-4 mr-2" />
             Clear Filters
@@ -120,7 +120,7 @@ export default function Controls({
 
       {/* Pricing Filters */}
       <div>
-        <span className="text-sm text-slate-400 font-medium mb-2 block">Pricing:</span>
+        <span className="text-sm text-gray-600 font-medium mb-2 block">Pricing:</span>
         <div className="flex flex-wrap gap-2">
           {pricingOptions.map((option) => {
             const isActive = pricingFilter.includes(option);
@@ -130,8 +130,8 @@ export default function Controls({
                 variant={isActive ? 'default' : 'outline'}
                 className={`cursor-pointer text-xs font-medium transition-all ${
                   isActive
-                    ? 'bg-cyan-500 hover:bg-cyan-600 text-white border-cyan-400'
-                    : 'bg-slate-800 hover:bg-slate-700 text-slate-300 border-slate-600'
+                    ? 'bg-gray-900 hover:bg-gray-800 text-white border-gray-900'
+                    : 'bg-white hover:bg-gray-50 text-gray-700 border-gray-300'
                 }`}
                 onClick={() => togglePricingFilter(option)}
               >

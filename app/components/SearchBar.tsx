@@ -42,7 +42,7 @@ export default function SearchBar({ value, onChange, totalResults }: SearchBarPr
 
   return (
     <div className="relative group">
-      <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400 group-focus-within:text-cyan-400 transition-colors" />
+      <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400 group-focus-within:text-gray-900 transition-colors" />
       
       <Input
         ref={inputRef}
@@ -50,21 +50,21 @@ export default function SearchBar({ value, onChange, totalResults }: SearchBarPr
         placeholder="Search platforms... (⌘K)"
         value={value}
         onChange={(e) => handleChange(e.target.value)}
-        className="pl-12 pr-24 h-12 bg-slate-800 border-slate-600 text-white placeholder:text-slate-400 focus:border-cyan-400 focus:ring-cyan-400/30 rounded-xl"
+        className="pl-12 pr-24 h-14 bg-white border-gray-300 text-gray-900 placeholder:text-gray-400 focus:border-gray-900 focus:ring-gray-900/10 rounded-xl shadow-sm"
       />
 
       <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-2">
         {value && (
           <>
-            <span className="text-xs text-slate-500 font-medium">
+            <span className="text-xs text-gray-500 font-medium">
               {totalResults} results
             </span>
             <button
               onClick={handleClear}
-              className="p-1 hover:bg-slate-700 rounded-md transition-colors"
+              className="p-1 hover:bg-gray-100 rounded-md transition-colors"
               aria-label="Clear search"
             >
-              <X className="h-4 w-4 text-slate-400" />
+              <X className="h-4 w-4 text-gray-400" />
             </button>
           </>
         )}

@@ -164,12 +164,12 @@ export default function HomeContent() {
     <>
       <Toaster 
         position="bottom-right" 
-        theme="dark"
+        theme="light"
         toastOptions={{
           style: {
-            background: '#1e293b',
-            color: '#f8fafc',
-            border: '1px solid #334155',
+            background: '#ffffff',
+            color: '#1a1a1a',
+            border: '1px solid #e5e7eb',
           },
         }}
       />
@@ -203,9 +203,9 @@ export default function HomeContent() {
 
           {/* Results Info */}
           {hasActiveFilters && (
-            <div className="text-sm text-slate-400">
-              Showing <span className="text-cyan-400 font-semibold">{filteredApps.length}</span> of{' '}
-              <span className="text-white font-semibold">{apps.length}</span> platforms
+            <div className="text-sm text-gray-600">
+              Showing <span className="text-gray-900 font-semibold">{filteredApps.length}</span> of{' '}
+              <span className="text-gray-900 font-semibold">{apps.length}</span> platforms
             </div>
           )}
         </div>

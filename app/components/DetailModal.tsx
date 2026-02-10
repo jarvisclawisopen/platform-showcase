@@ -22,16 +22,16 @@ interface DetailModalProps {
 }
 
 const categoryColors: Record<string, string> = {
-  'AI': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30',
-  'Crypto': 'bg-amber-500/10 text-amber-400 border-amber-500/30',
-  'Design': 'bg-pink-500/10 text-pink-400 border-pink-500/30',
-  'Development': 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
-  'Finance': 'bg-indigo-500/10 text-indigo-400 border-indigo-500/30',
-  'Marketing': 'bg-rose-500/10 text-rose-400 border-rose-500/30',
-  'Productivity': 'bg-teal-500/10 text-teal-400 border-teal-500/30',
-  'Research': 'bg-purple-500/10 text-purple-400 border-purple-500/30',
-  'Security': 'bg-slate-500/10 text-slate-400 border-slate-500/30',
-  'Other': 'bg-gray-500/10 text-gray-400 border-gray-500/30',
+  'AI': 'bg-blue-100 text-blue-700 border-blue-200',
+  'Crypto': 'bg-orange-100 text-orange-700 border-orange-200',
+  'Design': 'bg-pink-100 text-pink-700 border-pink-200',
+  'Development': 'bg-emerald-100 text-emerald-700 border-emerald-200',
+  'Finance': 'bg-indigo-100 text-indigo-700 border-indigo-200',
+  'Marketing': 'bg-rose-100 text-rose-700 border-rose-200',
+  'Productivity': 'bg-teal-100 text-teal-700 border-teal-200',
+  'Research': 'bg-purple-100 text-purple-700 border-purple-200',
+  'Security': 'bg-gray-100 text-gray-700 border-gray-200',
+  'Other': 'bg-gray-100 text-gray-700 border-gray-200',
 };
 
 export default function DetailModal({ app, isOpen, onClose }: DetailModalProps) {
@@ -61,18 +61,18 @@ export default function DetailModal({ app, isOpen, onClose }: DetailModalProps) 
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-slate-900 border-slate-700">
+      <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-white border-gray-200">
         <DialogHeader>
           <div className="flex items-start justify-between gap-4 mb-4">
             <div className="flex-1">
-              <DialogTitle className="text-3xl font-semibold text-white mb-3">
+              <DialogTitle className="text-3xl font-semibold text-gray-900 mb-3">
                 {app.name}
               </DialogTitle>
               <div className="flex flex-wrap items-center gap-2 mb-2">
                 <Badge variant="outline" className={`${categoryColor} text-xs font-semibold`}>
                   {app.category}
                 </Badge>
-                <Badge variant="outline" className="bg-slate-800 text-slate-300 border-slate-600 text-xs">
+                <Badge variant="outline" className="bg-gray-100 text-gray-700 border-gray-200 text-xs">
                   {app.pricingModel}
                 </Badge>
               </div>
@@ -81,17 +81,17 @@ export default function DetailModal({ app, isOpen, onClose }: DetailModalProps) 
               variant="ghost"
               size="icon"
               onClick={handleToggleFavorite}
-              className="shrink-0"
+              className="shrink-0 hover:bg-gray-100"
             >
               <Heart
                 className={`h-5 w-5 ${
-                  favorite ? 'fill-rose-500 text-rose-500' : 'text-slate-400'
+                  favorite ? 'fill-red-500 text-red-500' : 'text-gray-400'
                 }`}
               />
             </Button>
           </div>
 
-          <DialogDescription className="text-base text-slate-300 leading-relaxed">
+          <DialogDescription className="text-base text-gray-700 leading-relaxed">
             {app.description}
           </DialogDescription>
         </DialogHeader>
@@ -99,10 +99,10 @@ export default function DetailModal({ app, isOpen, onClose }: DetailModalProps) 
         <div className="space-y-6 pt-4">
           {/* Detailed Description */}
           <div>
-            <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">
+            <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
               About
             </h3>
-            <p className="text-slate-300 leading-relaxed text-sm whitespace-pre-line">
+            <p className="text-gray-700 leading-relaxed text-sm whitespace-pre-line">
               {app.detailed}
             </p>
           </div>
@@ -110,7 +110,7 @@ export default function DetailModal({ app, isOpen, onClose }: DetailModalProps) 
           {/* Tags */}
           {app.tags && app.tags.length > 0 && (
             <div>
-              <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">
+              <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
                 Tags
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -118,7 +118,7 @@ export default function DetailModal({ app, isOpen, onClose }: DetailModalProps) 
                   <Badge
                     key={index}
                     variant="secondary"
-                    className="bg-slate-800 text-slate-300 border-slate-600 text-xs font-medium hover:bg-slate-700 transition-colors"
+                    className="bg-gray-100 text-gray-700 border-gray-200 text-xs font-medium hover:bg-gray-200 transition-colors"
                   >
                     {tag}
                   </Badge>
@@ -128,10 +128,10 @@ export default function DetailModal({ app, isOpen, onClose }: DetailModalProps) 
           )}
 
           {/* Actions */}
-          <div className="flex flex-wrap gap-3 pt-4 border-t border-slate-700">
+          <div className="flex flex-wrap gap-3 pt-4 border-t border-gray-200">
             <Button
               asChild
-              className="bg-cyan-500 hover:bg-cyan-600 text-white flex-1 sm:flex-none"
+              className="bg-gray-900 hover:bg-gray-800 text-white flex-1 sm:flex-none"
             >
               <a href={app.url} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-4 w-4 mr-2" />
@@ -142,7 +142,7 @@ export default function DetailModal({ app, isOpen, onClose }: DetailModalProps) 
             <Button
               variant="outline"
               onClick={handleCopyUrl}
-              className="bg-slate-800 border-slate-600 text-slate-300 hover:bg-slate-700"
+              className="bg-white border-gray-300 text-gray-700 hover:bg-gray-50"
             >
               {copied ? (
                 <>

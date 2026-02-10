@@ -14,21 +14,51 @@ interface CardProps {
   index?: number;
 }
 
-const categoryColors: Record<string, { badge: string; border: string }> = {
-  'AI': { badge: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30', border: 'group-hover:border-cyan-400/60' },
-  'Crypto': { badge: 'bg-amber-500/10 text-amber-400 border-amber-500/30', border: 'group-hover:border-amber-400/60' },
-  'Design': { badge: 'bg-pink-500/10 text-pink-400 border-pink-500/30', border: 'group-hover:border-pink-400/60' },
-  'Development': { badge: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30', border: 'group-hover:border-emerald-400/60' },
-  'Finance': { badge: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/30', border: 'group-hover:border-indigo-400/60' },
-  'Marketing': { badge: 'bg-rose-500/10 text-rose-400 border-rose-500/30', border: 'group-hover:border-rose-400/60' },
-  'Productivity': { badge: 'bg-teal-500/10 text-teal-400 border-teal-500/30', border: 'group-hover:border-teal-400/60' },
-  'Research': { badge: 'bg-purple-500/10 text-purple-400 border-purple-500/30', border: 'group-hover:border-purple-400/60' },
-  'Security': { badge: 'bg-slate-500/10 text-slate-400 border-slate-500/30', border: 'group-hover:border-slate-400/60' },
-  'Other': { badge: 'bg-gray-500/10 text-gray-400 border-gray-500/30', border: 'group-hover:border-gray-400/60' },
+const categoryGradients: Record<string, { gradient: string; pattern: string }> = {
+  'AI': { 
+    gradient: 'from-blue-400 via-purple-400 to-pink-400',
+    pattern: 'M20 20 L40 40 M40 20 L20 40'
+  },
+  'Crypto': { 
+    gradient: 'from-yellow-400 via-orange-400 to-red-400',
+    pattern: 'M30 15 L45 30 L30 45 L15 30 Z'
+  },
+  'Design': { 
+    gradient: 'from-pink-400 via-rose-400 to-red-400',
+    pattern: 'M30 30 m-25,0 a25,25 0 1,0 50,0 a25,25 0 1,0 -50,0'
+  },
+  'Development': { 
+    gradient: 'from-green-400 via-emerald-400 to-teal-400',
+    pattern: 'M10 10 H50 V50 H10 Z M20 20 H40 V40 H20 Z'
+  },
+  'Finance': { 
+    gradient: 'from-indigo-400 via-blue-400 to-cyan-400',
+    pattern: 'M15 30 L30 15 L45 30 L30 45 Z'
+  },
+  'Marketing': { 
+    gradient: 'from-red-400 via-pink-400 to-fuchsia-400',
+    pattern: 'M30 10 L50 30 L30 50 L10 30 Z'
+  },
+  'Productivity': { 
+    gradient: 'from-teal-400 via-cyan-400 to-blue-400',
+    pattern: 'M20 15 L40 15 L40 45 L20 45 Z'
+  },
+  'Research': { 
+    gradient: 'from-violet-400 via-purple-400 to-indigo-400',
+    pattern: 'M30 30 m-20,0 a20,20 0 1,0 40,0 a20,20 0 1,0 -40,0'
+  },
+  'Security': { 
+    gradient: 'from-gray-600 via-slate-600 to-gray-700',
+    pattern: 'M25 15 L35 15 L35 25 L25 25 Z M25 35 L35 35 L35 45 L25 45 Z'
+  },
+  'Other': { 
+    gradient: 'from-gray-400 via-slate-400 to-gray-500',
+    pattern: 'M20 20 L40 20 L40 40 L20 40 Z'
+  },
 };
 
 export default function Card({ app, onOpenDetail, index = 0 }: CardProps) {
-  const colors = categoryColors[app.category] || categoryColors['Other'];
+  const { gradient, pattern } = categoryGradients[app.category] || categoryGradients['Other'];
   const { toggleFavorite, isFavorite } = useAppStore();
   const favorite = isFavorite(app.id);
 
@@ -46,85 +76,74 @@ export default function Card({ app, onOpenDetail, index = 0 }: CardProps) {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: index * 0.05 }}
+      transition={{ duration: 0.4, delay: index * 0.05 }}
+      className="group"
     >
-      <div onClick={() => onOpenDetail(app)} className="group block cursor-pointer">
-        <ShadcnCard className={`
-          bg-slate-900 border border-slate-700 rounded-2xl card-shadow card-hover
-          ${colors.border}
-        `}>
-          <CardHeader className="space-y-3 p-6">
-            {/* Category Badge + Favorite */}
-            <div className="flex items-center justify-between">
-              <Badge 
-                variant="outline" 
-                className={`${colors.badge} text-xs font-semibold`}
-              >
-                {app.category}
-              </Badge>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="h-8 w-8 opacity-0 group-hover:opacity-100 transition-opacity"
-                onClick={handleFavoriteClick}
-              >
-                <Heart
-                  className={`h-4 w-4 ${
-                    favorite ? 'fill-rose-500 text-rose-500' : 'text-slate-400'
-                  }`}
-                />
-              </Button>
+      <div onClick={() => onOpenDetail(app)} className="cursor-pointer">
+        <ShadcnCard className="overflow-hidden bg-white border border-gray-200 rounded-2xl card-shadow card-hover transition-all">
+          {/* Hero Visual Section - Dribbble style */}
+          <div className={`relative h-64 bg-gradient-to-br ${gradient} overflow-hidden`}>
+            {/* Pattern overlay */}
+            <svg className="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id={`pattern-${app.id}`} x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+                  <path d={pattern} fill="none" stroke="white" strokeWidth="2"/>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill={`url(#pattern-${app.id})`}/>
+            </svg>
+
+            {/* Category icon/letter */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-white/90 text-8xl font-bold drop-shadow-lg">
+                {app.name.charAt(0)}
+              </div>
             </div>
 
-            {/* Title */}
-            <CardTitle className="text-xl font-semibold text-white group-hover:text-cyan-400 transition-colors">
-              {app.name}
-            </CardTitle>
+            {/* Hover overlay */}
+            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
+              <p className="text-white text-center text-sm leading-relaxed line-clamp-4">
+                {app.description}
+              </p>
+            </div>
 
-            {/* Description */}
-            <CardDescription className="text-slate-400 text-sm leading-relaxed line-clamp-2 font-normal">
-              {app.description}
-            </CardDescription>
-          </CardHeader>
+            {/* Favorite button */}
+            <button
+              onClick={handleFavoriteClick}
+              className="absolute top-4 right-4 p-2 bg-white/90 hover:bg-white rounded-full shadow-lg transition-all opacity-0 group-hover:opacity-100"
+            >
+              <Heart
+                className={`h-5 w-5 ${
+                  favorite ? 'fill-red-500 text-red-500' : 'text-gray-700'
+                }`}
+              />
+            </button>
+          </div>
 
-          <CardContent className="px-6 pb-6 space-y-4">
-            {/* Tags */}
-            {app.tags && app.tags.length > 0 && (
-              <div className="flex flex-wrap gap-2">
-                {app.tags.slice(0, 3).map((tag, index) => (
-                  <Badge
-                    key={index}
-                    variant="secondary"
-                    className="bg-slate-800 text-slate-300 border-slate-600 text-xs font-medium hover:scale-110 transition-transform"
-                  >
-                    {tag}
-                  </Badge>
-                ))}
-                {app.tags.length > 3 && (
-                  <Badge
-                    variant="secondary"
-                    className="bg-slate-800 text-slate-300 border-slate-600 text-xs font-medium"
-                  >
-                    +{app.tags.length - 3}
-                  </Badge>
-                )}
-              </div>
-            )}
-
-            {/* Pricing + External Link */}
-            <div className="flex items-center justify-between pt-3 border-t border-slate-700/50">
-              <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
-                {app.pricingModel}
-              </span>
+          {/* Info Section - Dribbble style */}
+          <CardContent className="p-4">
+            <div className="flex items-start justify-between gap-2 mb-2">
+              <h3 className="text-lg font-semibold text-gray-900 leading-tight">
+                {app.name}
+              </h3>
               <a
                 href={app.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleExternalClick}
-                className="text-cyan-400 hover:text-cyan-300 transition-colors opacity-0 group-hover:opacity-100"
+                className="shrink-0 p-1.5 hover:bg-gray-100 rounded-lg transition-colors"
               >
-                <ExternalLink className="h-4 w-4" />
+                <ExternalLink className="h-4 w-4 text-gray-500" />
               </a>
+            </div>
+
+            {/* Tags row */}
+            <div className="flex items-center gap-2 text-xs text-gray-600">
+              <Badge variant="secondary" className="bg-gray-100 text-gray-700 border-0 text-xs font-medium">
+                {app.category}
+              </Badge>
+              <span className="text-gray-400">•</span>
+              <span className="font-medium">{app.pricingModel}</span>
             </div>
           </CardContent>
         </ShadcnCard>
