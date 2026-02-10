@@ -1,0 +1,1188 @@
+[
+  {
+    "id": "rec0yGJV18ycZiz3i",
+    "name": "Windsurf",
+    "url": "https://windsurf.com/",
+    "description": "AI-powered coding assistant and IDE",
+    "detailed": "Windsurf is an AI-powered coding IDE developed by Codeium, designed to keep developers in flow state. It features Cascade, an advanced AI assistant with memory capabilities that remembers important aspects of your codebase and workflow. Key features include automatic lint error detection and fixing, MCP (Model Context Protocol) support for connecting custom tools like Figma, Slack, Stripe, and PostgreSQL, drag-and-drop image-to-code conversion, natural language terminal commands, and Turbo mode for auto-executing terminal commands. Windsurf is trusted by over 1 million users and 4,000+ enterprise customers, with AI reportedly writing 94% of code. The platform supports Sequential Thinking, plugin management, and integrates with popular development workflows to enhance productivity across teams.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "coding",
+      "development",
+      "ide"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "rec30NSLcFeK7MwJG",
+    "name": "Same",
+    "url": "https://same.new/",
+    "description": "Collaborative design and prototyping",
+    "detailed": "Same is a collaborative design and prototyping platform that enables design teams to create, share, and iterate on product designs in real-time. The tool combines design capabilities similar to Figma or Sketch with built-in collaboration features, version control, and developer handoff workflows. Same emphasizes synchronous collaboration, allowing multiple designers to work on the same project simultaneously with live cursors, comments, and instant updates. The platform supports vector design, prototyping, design systems, component libraries, and design tokens for consistent UI development. Use cases include product design for web and mobile apps, marketing materials, and design system management. Same integrates with development tools, offering export capabilities for CSS, React components, and design specifications. The platform offers various pricing tiers, with team collaboration, unlimited projects, and advanced features available in paid plans. Same targets product design teams, UX/UI designers, and organizations seeking efficient design-to-development workflows with strong collaboration and version control features.",
+    "category": "Design",
+    "pricingModel": "Unknown",
+    "tags": [
+      "design",
+      "collaboration",
+      "prototyping"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "rec3PsQ1vGzMekFmi",
+    "name": "Vibecode",
+    "url": "https://www.vibecodeapp.com/",
+    "description": "AI mobile app builder",
+    "detailed": "Vibecode is an AI-powered mobile app builder that enables users to create native iOS and Android applications without traditional coding. The platform uses artificial intelligence to interpret natural language descriptions of app features, generate user interfaces, implement functionality, and produce deployable mobile apps. Users describe their app concept, target features, and design preferences, and Vibecode's AI constructs the application structure, screens, navigation flows, and business logic. The tool supports common app patterns like user authentication, data management, push notifications, payments, and API integrations. Vibecode offers both free and paid tiers, with premium plans providing advanced features, custom branding, app store publishing assistance, and export of source code. The no-code/low-code platform targets entrepreneurs, startups, small businesses, and non-technical founders who want to test app ideas quickly without hiring developers. Vibecode emphasizes speed, accessibility, and reducing barriers to mobile app creation. While AI-generated apps may require developer refinement for complex features, Vibecode accelerates the initial build phase and helps validate concepts before investing in custom development.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "mobile-app",
+      "development",
+      "no-code"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "rec4rM1TgpY3JQJYt",
+    "name": "PostSyncer",
+    "url": "https://postsyncer.com/#features",
+    "description": "Social media scheduling made simple",
+    "detailed": "PostSyncer is a social media scheduling platform designed to simplify multi-platform content distribution for creators, marketers, and businesses. The tool allows users to compose content once and schedule it across multiple social networks including Facebook, Twitter/X, LinkedIn, Instagram, and others. Key features include a unified scheduling calendar, automatic timezone conversion, post queuing, analytics tracking, and bulk upload capabilities. PostSyncer offers both free and paid plans, with premium tiers providing advanced scheduling options, team collaboration features, and detailed performance analytics. The platform aims to streamline social media management workflows, reduce repetitive posting tasks, and help users maintain consistent online presence across platforms. PostSyncer is particularly useful for small businesses, solopreneurs, and marketing teams who manage multiple social accounts and need efficient content distribution without the complexity of enterprise-grade tools.",
+    "category": "Marketing",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "social-media",
+      "scheduling",
+      "marketing"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "rec58PHM1R0JFW16y",
+    "name": "Pimlico",
+    "url": "https://www.pimlico.io/",
+    "description": "Smart account infrastructure for Web3",
+    "detailed": "Pimlico is a smart account infrastructure platform for Web3 applications, providing developers with tools to implement account abstraction (ERC-4337) and create seamless user experiences in decentralized applications. The platform offers APIs, SDKs, and infrastructure for gasless transactions, social logins, session keys, account recovery, and batch transaction processing. Pimlico enables Web3 apps to provide user experiences comparable to traditional applications by abstracting away blockchain complexities like gas fees, seed phrases, and transaction signing. Developers can integrate Pimlico to offer features like sponsored transactions (apps pay gas fees), email/social login for wallet creation, automated transaction bundling, and smart contract wallet management. The platform supports Ethereum and EVM-compatible chains, targeting dApps, wallets, games, and consumer-facing Web3 applications seeking mainstream adoption. Pimlico emphasizes developer experience, reliable infrastructure, and reducing onboarding friction for non-crypto-native users. The service operates on various pricing models depending on usage and feature requirements. Pimlico is part of the broader account abstraction ecosystem aiming to make Web3 more accessible and user-friendly.",
+    "category": "Other",
+    "pricingModel": "Unknown",
+    "tags": [
+      "web3",
+      "smart-accounts",
+      "infrastructure",
+      "crypto"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "rec5qriyqGCDqF5ZO",
+    "name": "Beam AI",
+    "url": "https://beam.ai/",
+    "description": "Platform for agentic automation and AI agents",
+    "detailed": "Beam AI is a comprehensive platform for building, deploying, and managing agentic AI systems and autonomous agents that can perform complex tasks with minimal human intervention. The platform provides infrastructure, tools, and frameworks for creating AI agents capable of reasoning, planning, tool use, and multi-step workflows. Beam AI supports integration with large language models (LLMs), external APIs, databases, and automation tools, enabling developers to build agents that can interact with software systems, process information, and execute actions autonomously. Use cases include customer support automation, data processing pipelines, research assistants, code generation agents, and business process automation. Beam AI offers both free and paid tiers, with enterprise features including advanced orchestration, scalability, monitoring, and compliance tools. The platform targets developers, enterprises, and AI researchers building production-grade agent systems. Beam AI emphasizes reliability, observability, and governance, providing logging, debugging, and safety mechanisms to ensure agents operate within defined boundaries and deliver consistent results.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "automation",
+      "agents"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "rec6TyryigsdBuSVK",
+    "name": "Substack",
+    "url": "https://substack.com/going-paid",
+    "description": "Paid newsletter platform",
+    "detailed": "Substack is a platform for creating, distributing, and monetizing paid email newsletters and publications. The service allows writers, journalists, and content creators to build direct relationships with audiences through subscription-based newsletters. Substack provides tools for writing posts, sending emails, managing subscribers, processing payments, and building communities around content. Writers can offer free newsletters, paid subscriptions, or hybrid models with both free and premium content tiers. The platform handles payment processing, subscriber management, and email delivery infrastructure. Substack takes a 10% fee on paid subscriptions plus payment processing fees, with writers keeping the majority of revenue. Key features include customizable publication design, analytics, community discussions, podcast hosting, and mobile apps. Substack has become popular among independent journalists, thought leaders, niche experts, and creators seeking sustainable monetization outside traditional media or advertising-dependent models. The platform emphasizes writer independence, direct audience relationships, and sustainable creator economics. Substack serves writers building media businesses, monetizing expertise, and establishing authority in specific domains through consistent, high-quality content.",
+    "category": "Marketing",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "newsletter",
+      "publishing",
+      "content",
+      "monetization"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "rec70d40FrrFtqh95",
+    "name": "Dia Browser",
+    "url": "https://www.diabrowser.com/",
+    "description": "AI chat with your browser tabs",
+    "detailed": "Dia Browser is an AI-enhanced web browser that allows users to chat with and extract information from their open browser tabs using conversational AI. The tool integrates directly into the browsing experience, enabling users to ask questions about content across multiple tabs, summarize articles, compare information, extract data, and perform research tasks without manually switching between tabs and copying information. Dia Browser uses natural language processing to understand queries and retrieve relevant information from active browser sessions, creating a more efficient research and browsing workflow. The platform offers both free and paid tiers, with premium features including unlimited queries, advanced AI models, tab management automation, and data export capabilities. Use cases include academic research, competitive analysis, content aggregation, comparison shopping, and any task requiring synthesis of information from multiple web sources. Dia Browser targets students, researchers, journalists, analysts, and knowledge workers who spend significant time gathering and processing web-based information. The tool represents the evolution of browsers toward AI-native interfaces that understand and assist with user intent beyond simple navigation.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "browser",
+      "productivity",
+      "tabs"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "rec9EbsuLKCiyxVqX",
+    "name": "LM Studio",
+    "url": "https://lmstudio.ai/models/openai/gpt-oss-120b",
+    "description": "Local LLM runner and model manager",
+    "detailed": "LM Studio is a desktop application for running large language models (LLMs) locally on personal computers without requiring cloud services or subscriptions. The free tool allows users to download, manage, and interact with open-source language models including GPT-style models, Llama variants, Mistral, and other openly available LLMs. LM Studio provides a user-friendly interface for model discovery, downloading models from Hugging Face, configuring inference parameters, and chatting with models privately on local hardware. The application supports GPU acceleration (NVIDIA, AMD, Apple Silicon), quantization for efficient memory usage, and local API servers compatible with OpenAI's API format. Use cases include privacy-sensitive applications, offline AI access, experimentation with different models, and development without API costs. LM Studio is popular among developers, researchers, and privacy-conscious users who want full control over their AI infrastructure. The tool runs on Windows, macOS, and Linux, with hardware requirements depending on model size. LM Studio represents the growing ecosystem of local-first AI tools, enabling powerful language model interactions without dependency on cloud providers.",
+    "category": "AI",
+    "pricingModel": "Free",
+    "tags": [
+      "ai",
+      "llm",
+      "local",
+      "development"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "rec9ZqjJj027bxsDM",
+    "name": "Haiku Trade",
+    "url": "https://app.haiku.trade/",
+    "description": "DeFi trading platform",
+    "detailed": "Haiku Trade is a decentralized finance (DeFi) trading platform focused on providing efficient, low-cost trading of digital assets across multiple blockchain networks. The free platform offers decentralized exchange (DEX) functionality with features like limit orders, market orders, cross-chain swaps, and liquidity aggregation to find optimal trading prices. Haiku Trade integrates with major DEX protocols and liquidity sources to route trades through the most efficient paths, minimizing slippage and fees. The platform supports EVM-compatible chains like Ethereum, Arbitrum, Optimism, and Polygon, allowing users to trade tokens without centralized intermediaries. Key features include non-custodial trading (users retain control of funds), MEV protection, advanced trading charts, portfolio tracking, and integration with popular Web3 wallets like MetaMask and WalletConnect. Haiku Trade targets DeFi traders, yield farmers, and crypto investors seeking decentralized alternatives to centralized exchanges with better privacy, security, and control. The platform emphasizes user experience, making DeFi trading accessible to both beginners and experienced traders through intuitive interfaces and smart routing algorithms.",
+    "category": "Crypto",
+    "pricingModel": "Free",
+    "tags": [
+      "defi",
+      "trading",
+      "crypto"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "rec9u1rLryxiCHQZk",
+    "name": "Surveillance Watch",
+    "url": "https://www.surveillancewatch.io/?menu=entities",
+    "description": "Privacy and surveillance tracking database",
+    "detailed": "Surveillance Watch is a comprehensive database and tracking platform documenting surveillance technologies, companies, government programs, and privacy-impacting systems worldwide. The free resource aggregates information about facial recognition systems, location tracking technologies, data brokers, government surveillance programs, and privacy-invasive tools deployed by corporations and states. Users can browse by entity type (companies, government agencies, technologies), filter by surveillance method (biometric, location, communication intercept), and explore relationships between surveillance actors. The platform serves privacy advocates, journalists, researchers, policymakers, and citizens concerned about privacy rights and surveillance expansion. Surveillance Watch provides transparency about who is collecting data, what technologies are being deployed, where surveillance systems operate, and how information flows between entities. The database emphasizes accountability, informed consent, and public awareness of surveillance infrastructure often hidden from public view. Surveillance Watch functions as a research tool, advocacy resource, and educational platform highlighting the scale and scope of modern surveillance ecosystems. The platform aims to empower individuals and communities to understand and resist intrusive surveillance practices.",
+    "category": "Security",
+    "pricingModel": "Free",
+    "tags": [
+      "privacy",
+      "surveillance",
+      "security",
+      "database"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recBBZKoC5hYA0XgI",
+    "name": "Soniox",
+    "url": "https://soniox.com/",
+    "description": "Speech-to-text AI platform",
+    "detailed": "Soniox is an enterprise-grade speech-to-text API platform that provides highly accurate audio transcription services powered by advanced AI models. The platform specializes in converting spoken language into text across multiple languages, accents, and audio quality conditions. Soniox offers low-latency streaming transcription for real-time applications, batch processing for recorded audio, speaker diarization (identifying who said what), custom vocabulary adaptation for domain-specific terminology, and punctuation/formatting capabilities. The paid service targets developers, enterprises, call centers, media companies, and applications requiring reliable voice recognition including voice assistants, meeting transcription tools, podcast transcription, customer service analytics, and accessibility features. Soniox emphasizes accuracy, speed, and API reliability with 99.9% uptime SLAs. The platform supports REST APIs, WebSocket streaming, and SDKs for Python, JavaScript, and other languages. Pricing is typically usage-based with volume discounts, making it suitable for both startups and large-scale enterprise deployments requiring high-volume transcription capabilities with predictable performance.",
+    "category": "AI",
+    "pricingModel": "Paid",
+    "tags": [
+      "ai",
+      "speech-to-text",
+      "audio"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recCXQ0BFEGApfLnc",
+    "name": "Gamma",
+    "url": "https://gamma.app/",
+    "description": "AI presentation maker and website builder",
+    "detailed": "Gamma is an AI-powered presentation and website builder that enables users to create professional presentations, documents, and web pages through natural language prompts and AI-assisted design. Unlike traditional slide-based tools, Gamma generates fully formatted, visually appealing content with intelligent layouts, images, and styling based on user input. Users describe their topic, provide key points, and Gamma constructs complete presentations with appropriate structure, transitions, and visual hierarchy. The platform supports collaborative editing, templates, media embedding, analytics, and export to PDF or web formats. Gamma also functions as a website builder, creating landing pages and documentation sites with the same AI-driven approach. The tool offers free and paid tiers, with premium features including unlimited presentations, custom branding, advanced analytics, and team workspaces. Gamma targets educators, business professionals, marketers, and anyone needing to communicate ideas visually without design expertise. The platform emphasizes speed and quality, transforming rough ideas into polished presentations in minutes. Gamma aims to democratize professional communication design through AI assistance.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "presentations",
+      "website-builder"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recEFt6O3CMYSNOS3",
+    "name": "God of Prompt",
+    "url": "https://www.godofprompt.ai/",
+    "description": "30000+ AI prompts for ChatGPT Claude Gemini Midjourney",
+    "detailed": "God of Prompt is a comprehensive library of over 30,000 AI prompts optimized for popular language models and image generation tools like ChatGPT, Claude, Gemini, and Midjourney. The paid resource provides pre-crafted prompts across categories including writing, marketing, business, programming, design, education, entertainment, and specialized professional use cases. Each prompt includes instructions, examples, and customization tips to help users achieve better results from AI tools. God of Prompt aims to solve the challenge of prompt engineering by offering tested, effective prompts that produce high-quality outputs consistently. The platform targets content creators, marketers, developers, business professionals, and AI enthusiasts who want to maximize productivity with AI tools without mastering prompt engineering. The resource is particularly valuable for Midjourney users seeking specific image styles, compositions, and artistic effects. God of Prompt includes regular updates with new prompts, community contributions, and prompt templates for emerging AI tools. The platform positions itself as a comprehensive prompt engineering resource, helping users unlock the full potential of AI tools through expertly crafted instructions.",
+    "category": "Other",
+    "pricingModel": "Paid",
+    "tags": [
+      "ai",
+      "prompts",
+      "resources",
+      "chatgpt"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recGCgXHn4MiBYcom",
+    "name": "LNVPN",
+    "url": "https://lnvpn.net/phone-numbers",
+    "description": "Disposable phone numbers for SMS verification",
+    "detailed": "LNVPN is a privacy-focused service providing disposable phone numbers for SMS verification without requiring personal phone numbers or long-term subscriptions. The paid platform allows users to receive SMS messages to temporary phone numbers from various countries, useful for verifying accounts on websites, apps, and services that require phone-based authentication. LNVPN helps protect privacy by preventing services from collecting users' real phone numbers, reducing spam, and maintaining anonymity. The service supports verification for social media accounts, messaging apps, online services, cryptocurrency exchanges, and other platforms requiring SMS confirmation. Users select a country and phone number, use it for verification, and receive the SMS code through LNVPN's web interface. The platform is particularly popular among privacy-conscious users, travelers needing local numbers for temporary use, developers testing SMS-based features, and individuals managing multiple online identities. LNVPN operates on a pay-per-use or credit-based model, making it cost-effective for occasional needs without monthly subscriptions. The service emphasizes privacy, no registration requirements, and instant number availability.",
+    "category": "Security",
+    "pricingModel": "Paid",
+    "tags": [
+      "privacy",
+      "sms",
+      "verification",
+      "phone-numbers"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recISwjzMdQ4nGfts",
+    "name": "Maestro",
+    "url": "https://maestro.dev/",
+    "description": "End-to-end UI testing for mobile and web",
+    "detailed": "Maestro is an end-to-end UI testing framework for mobile and web applications, offering a single unified platform for testing iOS, Android, React Native, Flutter, Web apps, and more. Maestro Studio provides a free visual testing IDE that empowers developers, testers, and non-technical users to create maintainable tests without deep coding knowledge. Key features include visual element inspection, action recording, AI-assisted test generation via MaestroGPT, and cross-platform compatibility. Users can run tests locally with the free CLI or scale with Maestro Cloud, which integrates into CI/CD pipelines for pre-release, nightly, and pull request testing. The platform supports Jetpack Compose, SwiftUI, NativeScript, .NET MAUI, Capacitor, Cordova, mobile browser testing, and web views. Maestro Studio is available for Mac, Windows, and Linux, enabling shift-left testing practices to catch issues early in development.",
+    "category": "Development",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "testing",
+      "mobile",
+      "web",
+      "qa"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recIvdV95ZhDXXsTb",
+    "name": "OpenTimestamps",
+    "url": "https://opentimestamps.org/",
+    "description": "Timestamping proof standard for blockchain",
+    "detailed": "OpenTimestamps is an open-source, decentralized timestamping proof standard that uses the Bitcoin blockchain to create cryptographic proofs that data existed at a specific point in time. The protocol defines a flexible set of operations for creating provable timestamps and independently verifying them later without relying on trusted third parties. OpenTimestamps operates through free calendar servers that aggregate timestamp requests and anchor them to the Bitcoin blockchain, eliminating the need for users to pay individual transaction fees. The system is permissionless, requires no registration or API keys, and ensures verifiable, tamper-proof records. Use cases include intellectual property protection, document authentication, audit trails, and legal evidence. The standard is flexible enough to support various timestamping methods beyond Bitcoin, making it a foundational tool for decentralized proof-of-existence applications in legal, academic, and business contexts.",
+    "category": "Crypto",
+    "pricingModel": "Free",
+    "tags": [
+      "blockchain",
+      "timestamp",
+      "proof"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recJBaCfAnfB8qtEW",
+    "name": "Designverse",
+    "url": "https://designverse.ai/",
+    "description": "Create any app at light speed with AI",
+    "detailed": "Designverse AI is an AI-powered application builder that enables users to create functional apps at high speed through natural language descriptions and AI-generated designs. The platform uses artificial intelligence to transform app concepts into complete application designs, including UI layouts, navigation flows, feature implementations, and even code generation. Users describe their app idea, target audience, and desired features, and Designverse produces working prototypes with professional designs and core functionality. The tool supports web apps, mobile apps, and hybrid experiences, offering both free and paid plans with varying levels of customization and export options. Designverse emphasizes speed, design quality, and reducing the gap between concept and prototype. The platform targets entrepreneurs, startups, designers, and non-technical founders who need to validate ideas quickly, create investor demos, or build MVPs without extensive development resources. While AI-generated apps may require developer refinement for production deployment, Designverse significantly accelerates the initial design and prototyping phases, making app creation more accessible and cost-effective.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "app-builder",
+      "design",
+      "development"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recJtaVQorVISbCTb",
+    "name": "FINE TUNING",
+    "url": "https://fine-tuning.com/EN",
+    "description": "Quantum-optimized technology services",
+    "detailed": "FINE TUNING is a technology services company specializing in quantum-optimized solutions for computing, simulation, and advanced scientific applications. The company focuses on bridging classical computing with quantum technologies, offering consulting, development, and implementation services for quantum algorithms, quantum-inspired optimization, and hybrid classical-quantum systems. FINE TUNING serves research institutions, technology companies, pharmaceutical firms, financial services, and organizations exploring quantum computing for solving complex computational problems like molecular simulation, portfolio optimization, logistics planning, and cryptography. Services may include quantum algorithm development, performance optimization of quantum circuits, feasibility studies for quantum applications, and training for teams transitioning to quantum-aware development practices. The company positions itself at the cutting edge of quantum technology, helping clients prepare for and leverage quantum computing advancements. FINE TUNING emphasizes practical applications of quantum technologies, focusing on delivering measurable value and performance improvements through quantum-optimized approaches. The company targets forward-thinking organizations investing in next-generation computing capabilities.",
+    "category": "Other",
+    "pricingModel": "Unknown",
+    "tags": [
+      "quantum",
+      "technology",
+      "science"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recKmpTdpLMipwAoi",
+    "name": "Origon AI",
+    "url": "https://origon.ai/",
+    "description": "AI automation platform",
+    "detailed": "Origon AI is a comprehensive agentic operating system designed for building, deploying, and observing AI agent systems with enterprise-grade reliability. The platform consists of three main components: Studio (drag-and-drop agent design interface), Sessions (real-time observation and debugging), and Insights (unified dashboard for performance metrics). Origon runs on dedicated infrastructure engineered for sub-second performance and includes an integrated knowledge engine that connects agents directly to organizational knowledge bases for accurate, context-aware responses. The platform comes pre-configured with hundreds of MCP connectors, APIs, and communication channels including voice, chat, WhatsApp, Slack, and custom code execution capabilities. Built for developers and engineered for architects, Origon emphasizes speed, reliability, security, and end-to-end governance across the entire AI lifecycle.",
+    "category": "AI",
+    "pricingModel": "Unknown",
+    "tags": [
+      "ai",
+      "automation"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recLy9mk5VLGxqcaS",
+    "name": "AI 2027",
+    "url": "https://ai-2027.com/",
+    "description": "AI future prediction and scenario planning",
+    "detailed": "AI 2027 is a research and scenario planning platform focused on predicting and exploring potential futures of artificial intelligence and its societal impact by the year 2027. The free resource aggregates expert forecasts, trend analysis, scenario modeling, and speculative timelines for AI capability development, regulatory changes, economic disruptions, and technological breakthroughs. The platform presents multiple future scenarios ranging from optimistic (widespread beneficial AI deployment) to cautionary (misalignment, job displacement, regulation failures) to help policymakers, researchers, businesses, and the public prepare for various outcomes. AI 2027 includes visualizations, research papers, expert interviews, and community discussions about near-term AI development trajectories. Use cases include strategic planning for AI adoption, risk assessment, investment decisions, policy formulation, and public discourse. The platform targets AI researchers, technology executives, policymakers, investors, and informed citizens interested in AI's short-term trajectory. AI 2027 emphasizes thoughtful consideration of AI's transformative potential and risks, encouraging proactive planning and responsible development. The platform serves as both an educational resource and a conversation starter about humanity's AI future.",
+    "category": "Other",
+    "pricingModel": "Free",
+    "tags": [
+      "ai",
+      "future",
+      "research",
+      "predictions"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recLzeRnlurfOHT06",
+    "name": "HeyGen",
+    "url": "https://app.heygen.com/",
+    "description": "AI spokesperson video creator",
+    "detailed": "HeyGen is an AI-powered video creation platform that generates spokesperson videos with AI avatars and voices, enabling users to create professional video content without filming, actors, or expensive production. The platform offers a library of realistic AI avatars (diverse ages, ethnicities, styles) that can deliver scripts with natural lip-sync, gestures, and expressions. Users input text scripts, select avatars and voices, customize backgrounds and branding, and HeyGen generates the video automatically. The tool supports multiple languages, voice cloning (create custom avatar voices), green screen effects, and video templates for various use cases including marketing videos, training content, product demonstrations, personalized messages, and social media content. HeyGen offers free and paid tiers, with premium plans providing more credits, custom avatars, higher resolution, and commercial usage rights. The platform targets marketers, content creators, educators, HR teams, and businesses needing video content at scale without the cost and complexity of traditional video production. HeyGen emphasizes accessibility, speed, and quality, making professional video creation available to non-video professionals.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "video",
+      "avatar",
+      "content-creation"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recNibpka1ESh5EoH",
+    "name": "Play Hub",
+    "url": "https://playhub.com/",
+    "description": "On-chain automation network (copytrade arbitrage predictions)",
+    "detailed": "Play Hub is an on-chain automation network for cryptocurrency traders, offering tools for copy trading, arbitrage detection, and predictive analytics across DeFi protocols. The platform enables users to automate trading strategies, mirror successful traders' portfolios, identify arbitrage opportunities across DEXs, and leverage predictive models for market movements. Play Hub supports multiple blockchain networks including Ethereum, BSC, Polygon, and other EVM-compatible chains. Key features include automated execution of trades, risk management parameters, strategy backtesting, and real-time alerts for arbitrage opportunities. The platform caters to both novice traders who want to copy experienced traders' strategies and advanced users seeking automation for complex trading logic. Play Hub operates through smart contracts, ensuring transparent, trustless execution of strategies. Pricing and revenue models may include subscription fees, performance fees, or token-based governance. The platform targets crypto traders seeking to improve returns through automation, diversification, and data-driven strategies without constant manual monitoring. Play Hub aims to democratize sophisticated trading strategies through accessible automation and social trading features.",
+    "category": "Crypto",
+    "pricingModel": "Unknown",
+    "tags": [
+      "crypto",
+      "defi",
+      "automation",
+      "trading"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recNt5KWYp0lElFtY",
+    "name": "Bloom",
+    "url": "https://www.trybloom.ai/",
+    "description": "AI-powered productivity tool",
+    "detailed": "Bloom is an AI-powered productivity tool designed to enhance personal and professional workflows through intelligent task management, note-taking, and knowledge organization. The platform uses artificial intelligence to automatically categorize notes, suggest related content, generate summaries, and surface relevant information when needed. Bloom integrates with calendars, email, project management tools, and communication platforms to create a unified workspace for knowledge workers. Key features include smart search, AI-generated meeting notes, task prioritization, context-aware reminders, and collaborative workspaces. The tool is aimed at professionals, students, researchers, and teams who handle large volumes of information and need efficient systems for capturing, organizing, and retrieving knowledge. Bloom offers both free and paid tiers, with premium features including unlimited storage, advanced AI capabilities, team collaboration, and integrations with enterprise tools. The platform emphasizes reducing cognitive load, preventing information overload, and helping users stay focused on high-value work.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "productivity"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recOUsFYTltdSU72t",
+    "name": "Rive",
+    "url": "https://rive.app/",
+    "description": "Interactive animation and motion design tool",
+    "detailed": "Rive is a powerful interactive animation and motion design tool that enables designers and developers to create real-time, state-based animations for games, apps, websites, and products. Unlike traditional animation software, Rive focuses on interactive graphics that respond to user input, game logic, or application state changes. The platform provides a visual editor where designers can create vector graphics, define animations, set up state machines, and build complex interactive behaviors without coding. Rive animations are lightweight, runtime-driven, and exportable to multiple platforms including iOS, Android, Web, Unity, Unreal, and Flutter. Use cases include character animations for games, micro-interactions for UI/UX, animated illustrations, loading screens, and interactive data visualizations. Rive offers both free and paid plans, with collaboration features, version control, and advanced state machine capabilities in premium tiers. The tool bridges the gap between design and development, allowing designers to deliver polished, responsive animations directly to production.",
+    "category": "Design",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "animation",
+      "motion-design",
+      "design"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recOdoFkB3fe5fsiF",
+    "name": "Nomads.com",
+    "url": "https://nomads.com/",
+    "description": "Digital nomad community and resources",
+    "detailed": "Nomads.com is a platform and community for digital nomads providing resources, tools, and connections for location-independent professionals and remote workers. The platform offers city guides, cost-of-living data, visa information, co-working space directories, accommodation recommendations, and community forums where nomads share experiences and advice. Nomads.com helps users find suitable destinations based on criteria like internet speed, cost of living, climate, time zones, and community vibes. The platform includes both free resources and paid membership tiers with premium features like detailed guides, exclusive events, job boards, and networking opportunities. Use cases include trip planning, finding remote work-friendly locations, connecting with other nomads, accessing local discounts, and navigating visa/legal requirements for extended stays abroad. Nomads.com targets freelancers, remote employees, entrepreneurs, and anyone pursuing location-independent lifestyles. The platform emphasizes community, practical information, and sustainable travel practices. Nomads.com serves as both an informational resource and a social network for the growing digital nomad movement seeking to live and work from anywhere.",
+    "category": "Other",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "nomad",
+      "travel",
+      "community",
+      "remote-work"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recP4jh3eZNdmD8s6",
+    "name": "Hugging Face Spaces",
+    "url": "https://huggingface.co/spaces",
+    "description": "Discover ML apps made by the community",
+    "detailed": "Hugging Face Spaces is a free platform for discovering, using, and deploying machine learning applications and demos created by the AI community. Hosted on Hugging Face's infrastructure, Spaces allows developers and researchers to share interactive ML demos built with frameworks like Gradio and Streamlit. Users can explore thousands of applications covering image generation, text analysis, audio processing, computer vision, natural language processing, and more—all runnable directly in the browser without local setup. Spaces serves as both a showcase for ML capabilities and a tool for rapid prototyping and experimentation. Developers can deploy their own models, create interactive interfaces, and share them with the community or embed them in websites. The platform supports GPU acceleration for compute-intensive models and integrates with Hugging Face's model hub, datasets, and ecosystem. Spaces targets AI researchers demonstrating work, developers building ML tools, educators teaching AI concepts, and anyone wanting to experiment with state-of-the-art models without technical barriers. Hugging Face Spaces democratizes access to ML applications, making cutting-edge AI accessible to broader audiences.",
+    "category": "Other",
+    "pricingModel": "Free",
+    "tags": [
+      "ai",
+      "ml",
+      "community",
+      "apps"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recSojPlxWuk5F77A",
+    "name": "Born",
+    "url": "https://www.born.com/",
+    "description": "Unknown (requires investigation)",
+    "detailed": "Born is a platform whose specific details require further investigation, as the website and available information do not provide comprehensive product descriptions. Based on the domain name and general context, Born may be related to digital services, SaaS products, or creative/design tools. Without access to detailed product information, marketing materials, or user documentation, it is not possible to provide accurate specifics about Born's features, target audience, or business model. Users interested in Born should visit the website directly, explore available documentation, or contact the company for detailed information about their offerings, pricing, and use cases. This placeholder description will be updated once reliable information becomes available about Born's products and services.",
+    "category": "Other",
+    "pricingModel": "Unknown",
+    "tags": [
+      "unknown"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recTCIZrkEs8Q5Pw0",
+    "name": "Cap",
+    "url": "https://cap.so/download",
+    "description": "Beautiful screen recordings platform",
+    "detailed": "Cap is a screen recording platform designed for creating beautiful, shareable screen recordings with automatic enhancements and easy distribution. The tool captures screen activity, webcam footage, and audio while automatically applying polish like smooth animations, clean layouts, and branded elements. Cap emphasizes creating recordings that look professional without manual editing, making it ideal for product demos, tutorials, bug reports, sales presentations, and internal communication. The platform offers both free and paid tiers, with premium features including unlimited recordings, custom branding, advanced analytics on view counts and engagement, and integrations with tools like Slack, Notion, and project management software. Cap provides instant shareable links after recording, enabling quick distribution without file management or upload delays. The tool targets product managers, developers, customer success teams, educators, and content creators who frequently need to communicate through visual demonstrations. Cap differentiates itself through emphasis on output quality and ease of sharing, positioning screen recording as a modern communication medium rather than a technical task requiring post-production work.",
+    "category": "Other",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "screen-recording",
+      "video",
+      "productivity"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recTtBgvGeFFKELz8",
+    "name": "Everifin",
+    "url": "https://www.everifin.com/sk",
+    "description": "Financial services platform (Slovakia)",
+    "detailed": "Everifin is a Slovak-based financial services platform that provides multibanking, e-invoicing, and digital wallet solutions. Built on the EU's PSD2 (Payment Service Directive 2) open banking framework, Everifin aggregates multiple bank accounts from different institutions into a single mobile app, guaranteeing at least 90% coverage of banks in each supported country. The platform's e-invoicing feature allows businesses and individuals to issue, receive, and pay invoices digitally and ecologically. The digital wallet enables instant payments directly from bank accounts without physical cards, supporting in-store contactless transactions. Everifin leverages secure, licensed third-party access to financial data, ensuring compliance with EU regulations while providing innovative fintech products. The platform is designed for consumers and businesses seeking centralized financial management, simplified invoicing workflows, and modern payment methods across Slovakia and potentially other European markets.",
+    "category": "Finance",
+    "pricingModel": "Unknown",
+    "tags": [
+      "finance",
+      "slovakia"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recUP5D413CWUvm0w",
+    "name": "Monospace ASCII Generator",
+    "url": "https://codepen.io/Mikhail-Bespalov/pen/JoPqYrz",
+    "description": "ASCII art generator tool",
+    "detailed": "Monospace ASCII Generator is a web-based tool for creating ASCII art and text-based graphics using monospace fonts. The free tool, hosted on CodePen, allows users to convert images or text into ASCII representations using characters like letters, numbers, and symbols arranged to form pictures or stylized text. ASCII art is useful for terminal displays, code comments, text-based interfaces, retro aesthetics, or situations where graphical images cannot be used. The generator provides options for character density, contrast adjustment, and output size. Users can upload images or type text and receive ASCII versions suitable for copying into code, documents, or terminal applications. The tool is popular among developers, designers creating retro projects, and artists exploring text-based creative mediums. Monospace ASCII art has nostalgic appeal and practical applications in command-line tools, documentation, and minimalist design. The generator demonstrates creative uses of simple web technologies and serves as both a utility and an artistic tool for text-based visual creation.",
+    "category": "Other",
+    "pricingModel": "Free",
+    "tags": [
+      "ascii-art",
+      "generator",
+      "design"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recUe3FP1XLs5A9zn",
+    "name": "Rain",
+    "url": "https://www.rain.xyz/",
+    "description": "Stablecoin-powered cards and payments infrastructure",
+    "detailed": "Rain is a fintech platform building stablecoin-powered payment cards and infrastructure for everyday transactions. The company enables users to spend USDC and other stablecoins directly through Visa or Mastercard-branded debit cards, converting crypto to fiat at the point of sale. Rain's infrastructure supports real-time settlement, low fees, and global acceptance at millions of merchants. The platform targets crypto holders who want to use their digital assets for daily purchases without manually converting to fiat or paying high exchange fees. Rain emphasizes compliance, working within regulatory frameworks to offer licensed payment services. Additional features include mobile app management, spending controls, rewards programs, and integration with DeFi protocols for yield-generating balances. Rain's mission is to bridge the gap between cryptocurrency and traditional commerce, making stablecoins a practical medium of exchange for rent, groceries, travel, and online shopping. The platform serves individuals, businesses, and developers seeking stablecoin payment solutions.",
+    "category": "Crypto",
+    "pricingModel": "Unknown",
+    "tags": [
+      "stablecoin",
+      "payments",
+      "crypto",
+      "fintech"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recX9zwmZ4MngFegW",
+    "name": "Superheat",
+    "url": "https://www.superheat.xyz/",
+    "description": "Redefining energy infrastructure with technology",
+    "detailed": "Superheat is a technology company focused on redefining residential and commercial energy infrastructure through smart hardware, software, and decentralized energy systems. The platform aims to make energy generation, storage, and distribution more efficient, affordable, and sustainable by integrating solar power, battery storage, smart thermostats, and energy management software. Superheat's solutions target homeowners, property developers, and businesses seeking to reduce energy costs, improve resilience against outages, and transition to renewable energy sources. The company emphasizes innovation in heat pump technology, thermal energy storage, and demand-side management to optimize energy consumption patterns. Superheat's business model combines hardware sales, software subscriptions, and energy services, positioning itself at the intersection of cleantech, IoT, and distributed energy resources. The platform addresses grid instability, rising energy prices, and climate concerns by empowering consumers to generate, store, and manage their own energy locally.",
+    "category": "Other",
+    "pricingModel": "Unknown",
+    "tags": [
+      "energy",
+      "infrastructure",
+      "technology"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recXMAS2ba4ju5uaf",
+    "name": "Duon Labs Voyons",
+    "url": "https://www.duonlabs.com/voyons",
+    "description": "Assumption-free market simulation",
+    "detailed": "Duon Labs Voyons is an assumption-free market simulation and analytical platform designed for financial modeling, scenario analysis, and predictive analytics without relying on traditional assumptions or historical bias. Unlike conventional financial models that depend on historical data, regression analysis, and predefined assumptions, Voyons uses advanced computational methods, agent-based modeling, and simulation techniques to explore market behaviors under various conditions. The platform is aimed at quantitative analysts, hedge funds, risk managers, and financial institutions seeking to model complex market dynamics, test trading strategies, and evaluate portfolio risks in volatile or unprecedented market conditions. Voyons allows users to define custom scenarios, simulate interactions between market participants, and observe emergent behaviors without assuming normal distributions or historical correlations. This assumption-free approach is particularly valuable for tail risk analysis, crisis scenario planning, and understanding non-linear market phenomena. The platform supports custom modeling languages, integration with data feeds, and collaborative research environments for quantitative teams.",
+    "category": "Finance",
+    "pricingModel": "Unknown",
+    "tags": [
+      "market-simulation",
+      "analytics",
+      "finance"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recZ0JB7ToXxuDWnZ",
+    "name": "Vals AI",
+    "url": "https://www.vals.ai/benchmarks",
+    "description": "AI benchmarking and evaluation platform",
+    "detailed": "Vals AI is an AI benchmarking and evaluation platform that provides comprehensive testing, comparison, and performance metrics for various artificial intelligence models across different tasks and domains. The platform allows developers, researchers, and organizations to assess AI model capabilities in areas like reasoning, coding, mathematics, language understanding, instruction following, and task-specific performance. Vals AI runs standardized benchmark suites, custom evaluation scenarios, and real-world task simulations to measure model accuracy, speed, reliability, and cost-efficiency. The platform supports comparison across models from different providers (OpenAI, Anthropic, Google, open-source models) to help users select optimal models for specific applications. Use cases include model selection for production systems, research validation, competitive analysis, and tracking AI capability progression over time. Vals AI emphasizes transparency, reproducibility, and practical relevance of benchmarks beyond academic metrics. The platform targets AI engineers, product teams integrating AI, researchers, and organizations making strategic decisions about AI adoption and investment. Vals AI helps demystify AI performance through data-driven, comparative evaluations.",
+    "category": "AI",
+    "pricingModel": "Unknown",
+    "tags": [
+      "ai",
+      "benchmarking",
+      "evaluation"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recaAMs2IdHG4Yfyh",
+    "name": "Loki.Build",
+    "url": "https://loki.build/?ref=producthunt",
+    "description": "AI website builder for high-quality landing pages",
+    "detailed": "Loki.Build is an AI-powered website builder focused on creating high-quality, conversion-optimized landing pages quickly and efficiently. The platform uses artificial intelligence to generate professional designs, layouts, and content based on user inputs and best practices in web design and conversion optimization. Users can describe their product or service, and Loki.Build produces fully functional landing pages with modern aesthetics, responsive design, and optimized user flows. The tool is aimed at startups, marketers, product managers, and agencies who need to launch landing pages rapidly for product launches, marketing campaigns, lead generation, or A/B testing. Loki.Build offers both free and paid tiers, with paid plans providing additional customization options, export capabilities, and advanced features. The platform emphasizes speed, design quality, and conversion effectiveness, reducing the time from concept to live landing page from days to minutes.",
+    "category": "Design",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "website-builder",
+      "design",
+      "landing-pages"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recaAzvOFSOtiqbCs",
+    "name": "Oncely",
+    "url": "https://oncely.com/subscribe",
+    "description": "Lifetime deals platform for AI business software",
+    "detailed": "Oncely is a marketplace platform offering lifetime deals on AI business software and SaaS tools, allowing users to purchase software with one-time payments instead of recurring subscriptions. The paid platform features curated deals on tools across categories like productivity, marketing, development, design, customer service, and business operations. Each listing includes detailed product information, feature comparisons, pricing tiers, and user reviews. Oncely targets entrepreneurs, startups, freelancers, and small businesses seeking to reduce monthly software expenses by purchasing lifetime access to essential tools. The platform partners with software companies looking to gain users, validate products, and generate upfront revenue. Featured deals often represent significant savings compared to monthly or annual subscription costs. Oncely emphasizes quality curation, customer support, and exclusive offers not available elsewhere. The platform includes software categories like AI writing tools, email marketing, project management, analytics, and automation. Oncely appeals to cost-conscious businesses building tech stacks without committing to long-term subscriptions, especially valuable for early-stage companies managing limited budgets.",
+    "category": "Other",
+    "pricingModel": "Paid",
+    "tags": [
+      "lifetime-deals",
+      "software",
+      "ai",
+      "saas"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recaT7y5otMLG9lkq",
+    "name": "Dub",
+    "url": "https://dub.co/home",
+    "description": "Modern link attribution platform",
+    "detailed": "Dub is a modern link management and attribution platform designed for marketers, growth teams, and businesses that need detailed analytics on link performance across campaigns. The platform allows users to create, customize, and track branded short links with comprehensive attribution data including clicks, conversions, geographic location, device types, and referral sources. Dub provides features like custom domains, QR code generation, A/B testing for links, UTM parameter management, team collaboration, and API access for programmatic link creation. The tool integrates with marketing automation platforms, CRM systems, and analytics tools to provide end-to-end campaign attribution. Dub offers both free and paid plans, with premium features including unlimited links, advanced analytics, custom branding, and team workspaces. The platform targets digital marketers, affiliate marketers, content creators, and businesses running multi-channel marketing campaigns who need reliable link tracking and attribution. Dub emphasizes speed, reliability, and modern design, positioning itself as a contemporary alternative to legacy link management tools with better UX and more comprehensive analytics capabilities.",
+    "category": "Marketing",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "link-management",
+      "analytics",
+      "marketing"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recabp9L27PomRWdh",
+    "name": "Avici",
+    "url": "https://avici.money/",
+    "description": "Crypto payment solution",
+    "detailed": "Avici is a cryptocurrency payment solution platform designed to facilitate seamless crypto transactions for merchants, consumers, and businesses. The platform likely provides payment processing infrastructure, merchant integration tools, and user-facing payment interfaces for accepting and spending cryptocurrency. Avici may support multiple digital assets including stablecoins, Bitcoin, Ethereum, and other popular tokens, offering instant settlement, low fees, and conversion to fiat currencies. Use cases include e-commerce checkout integration, peer-to-peer payments, cross-border transactions, and subscription services. The platform targets merchants seeking to accept crypto payments, consumers wanting to spend digital assets, and businesses operating in crypto-native industries. Avici likely emphasizes user experience, regulatory compliance, and interoperability with existing payment infrastructure. Features may include payment links, invoicing, recurring billing, and analytics dashboards. Avici operates in the growing crypto payment processing sector, competing with services like BitPay and Coinbase Commerce by offering reliable, user-friendly infrastructure for crypto commerce adoption.",
+    "category": "Crypto",
+    "pricingModel": "Unknown",
+    "tags": [
+      "crypto",
+      "payments",
+      "defi"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recaenOIDnpRZwZc5",
+    "name": "Cluely",
+    "url": "https://cluely.com/",
+    "description": "Live AI meeting assistant with real-time notes",
+    "detailed": "Cluely is an AI-powered live meeting assistant that provides real-time note-taking, action item extraction, and intelligent insights during virtual and in-person meetings. The platform listens to conversations (with permission), generates structured meeting notes, identifies key decisions and action items, assigns tasks, and creates follow-up summaries automatically. Cluely integrates with video conferencing platforms like Zoom, Google Meet, and Microsoft Teams, as well as calendar systems and project management tools. Features include speaker identification, searchable transcripts, highlight reels, keyword tracking, and automated CRM updates for sales calls. The tool offers both free and paid tiers, with premium features including unlimited meetings, advanced integrations, team workspaces, and analytics on meeting effectiveness. Cluely targets remote teams, sales professionals, consultants, managers, and anyone who spends significant time in meetings and needs better documentation and follow-through. The platform aims to reduce post-meeting administrative work, improve accountability, and ensure nothing discussed in meetings gets forgotten. Cluely represents the growing category of AI meeting productivity tools designed to make meetings more actionable and less time-consuming.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "meetings",
+      "notes",
+      "productivity"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recbCV56oQyzlAAf6",
+    "name": "Vellum AI",
+    "url": "https://www.vellum.ai/?utm_source=perplexity&utm_medium=geo",
+    "description": "Build AI agents in plain English",
+    "detailed": "Vellum AI is a user-friendly platform for building and deploying AI agents using plain English instructions instead of complex code or technical configurations. The tool allows non-technical users, product managers, and business professionals to create functional AI agents by describing desired behaviors, workflows, and decision logic in natural language. Vellum AI then translates these descriptions into executable agent systems that can interact with APIs, databases, communication tools, and business software. The platform supports multi-step workflows, conditional logic, integration with third-party services, and real-time monitoring of agent performance. Use cases include customer support bots, sales automation, data entry and processing, lead qualification, and internal workflow automation. Vellum AI offers both free and paid plans, with premium features including advanced integrations, team collaboration, higher usage limits, and enterprise support. The platform democratizes AI agent development, enabling teams to rapidly prototype and deploy automation solutions without engineering resources. Vellum AI emphasizes ease of use, reliability, and business-focused applications of agent technology.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "agents",
+      "development"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recbkB82vD29iydsi",
+    "name": "Loot Drop",
+    "url": "https://www.loot-drop.io/",
+    "description": "1100+ failed startup case studies and ideas",
+    "detailed": "Loot Drop is a comprehensive database and learning platform featuring over 1,100 case studies of failed startups and abandoned business ideas. The paid service provides detailed post-mortems, market analysis, and lessons learned from unsuccessful ventures across various industries and sectors. Entrepreneurs, founders, and business students use Loot Drop to understand common failure patterns, avoid costly mistakes, and identify market gaps where previous attempts fell short. Each case study includes information about the product, market conditions, competition, funding history, reasons for failure, and key takeaways. The platform serves as a research tool for validating business ideas, understanding market risks, and learning from the mistakes of others before committing resources to new ventures. Loot Drop transforms failure data into actionable insights, helping the next generation of founders build more resilient businesses by learning what doesn't work.",
+    "category": "Research",
+    "pricingModel": "Paid",
+    "tags": [
+      "startups",
+      "case-studies",
+      "education",
+      "research"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recda2RoqG75TLEdu",
+    "name": "StrawberryAI",
+    "url": "https://www.usestrawberry.ai/",
+    "description": "DeFi AI agents for crypto trading and research",
+    "detailed": "StrawberryAI is a DeFi-focused AI agent platform that provides intelligent automation for cryptocurrency trading, research, and portfolio management. The platform uses artificial intelligence to analyze on-chain data, market sentiment, technical indicators, and fundamental metrics to assist crypto traders and investors with decision-making. StrawberryAI offers features like automated trading strategies, risk management, yield optimization, token research, and market alerts. The agents can monitor multiple chains, execute trades across DEXs, track wallet activities, and provide natural language insights about market conditions. Use cases include algorithmic trading, DeFi yield farming optimization, portfolio rebalancing, risk assessment, and research automation. StrawberryAI targets both retail crypto investors seeking AI-assisted trading and institutional players looking for sophisticated automation and analytics. The platform emphasizes transparency, security (non-custodial architecture), and customizable agent behaviors. StrawberryAI represents the convergence of AI and DeFi, aiming to make complex trading strategies and market analysis accessible through intelligent agents that operate autonomously within user-defined parameters.",
+    "category": "AI",
+    "pricingModel": "Unknown",
+    "tags": [
+      "ai",
+      "defi",
+      "crypto",
+      "trading",
+      "agents"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recdxkG7kxybuGeUw",
+    "name": "YouHodler",
+    "url": "https://www.youhodler.com/?r=0",
+    "description": "Cryptocurrency exchange and trading platform",
+    "detailed": "YouHodler is a Swiss-regulated cryptocurrency platform that bridges traditional finance and crypto through an all-in-one Web3 fintech solution. Licensed and regulated across multiple European countries, the platform offers secure buying, selling, exchanging, and trading of digital assets including BTC, ETH, SOL, XRP, BNB, SHIB, TON, and various altcoins like APE, GALA, and PEPE. YouHodler provides crypto-backed loans, high-yield savings accounts, automated trading tools called Turbocharge and Multi HODL, and seamless fiat-to-crypto transactions. The platform emphasizes security through regulation compliance, insurance coverage, and cold storage solutions. Users can earn interest on crypto holdings, access instant loans without selling assets, and utilize advanced trading features. With offices across Europe and multilingual support, YouHodler caters to both retail and institutional investors seeking a simplified, secure crypto experience.",
+    "category": "Crypto",
+    "pricingModel": "Paid",
+    "tags": [
+      "crypto",
+      "exchange",
+      "trading",
+      "finance"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "receE8K6UVTZamYX1",
+    "name": "Tria",
+    "url": "https://tria.so/",
+    "description": "Borderless neo-bank for Web3",
+    "detailed": "Tria is a borderless neo-bank built for the Web3 era, offering financial services that bridge traditional banking and cryptocurrency. The platform provides users with multi-currency accounts supporting both fiat and crypto assets, seamless fiat-to-crypto conversions, debit cards for spending digital assets globally, and DeFi integration for earning yield on deposits. Tria aims to create a unified financial experience where users can manage traditional money and crypto assets in one place without juggling multiple platforms. Key features likely include instant cross-border payments, low-cost currency conversions, savings accounts with competitive yields (including crypto staking), and compliance with financial regulations across jurisdictions. Tria targets globally mobile individuals, crypto enthusiasts, freelancers receiving international payments, and anyone seeking modern banking alternatives that embrace both traditional finance and Web3. The platform emphasizes convenience, security, and inclusivity, making financial services accessible to users regardless of location or banking infrastructure. Tria represents the emerging category of crypto-native banks that reimagine financial services for a digitally connected, borderless economy.",
+    "category": "Crypto",
+    "pricingModel": "Unknown",
+    "tags": [
+      "crypto",
+      "banking",
+      "web3",
+      "finance"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "receVClDiljqbZyWz",
+    "name": "Mezo",
+    "url": "https://mezo.org/",
+    "description": "Everyday finance using Bitcoin",
+    "detailed": "Mezo is a Bitcoin-native financial platform that enables everyday financial services using Bitcoin as the foundation. The platform aims to make Bitcoin more accessible and useful for daily transactions, savings, and financial management beyond just holding or trading. Mezo offers services such as Bitcoin-backed spending accounts, instant settlement, low-fee transactions, and integration with existing financial infrastructure. The platform leverages Bitcoin's security and decentralization while building user-friendly applications for payments, remittances, and micro-transactions. Mezo targets individuals in regions with limited banking access, Bitcoin enthusiasts who want to use BTC for regular expenses, and users seeking alternatives to traditional banking. The free platform emphasizes sovereignty, privacy, and financial inclusion, allowing users to manage Bitcoin without intermediaries. Mezo's vision is to transform Bitcoin from primarily a store of value into a practical medium of exchange and unit of account for everyday finance, unlocking Bitcoin's potential as a global, censorship-resistant currency.",
+    "category": "Crypto",
+    "pricingModel": "Free",
+    "tags": [
+      "bitcoin",
+      "finance",
+      "crypto"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recgqNYyVWA5NR8xR",
+    "name": "Fanvue",
+    "url": "https://www.fanvue.com/",
+    "description": "Creator subscription platform",
+    "detailed": "Fanvue is a creator subscription platform allowing content creators, influencers, and artists to monetize their work through paid memberships and exclusive content distribution. Similar to platforms like Patreon or OnlyFans, Fanvue enables creators to build direct relationships with fans who subscribe for access to premium content, behind-the-scenes material, personalized interactions, and exclusive communities. The paid platform provides tools for content management, subscriber messaging, payment processing, analytics, and creator storefronts. Fanvue supports various content types including photos, videos, live streams, written content, and digital downloads. Creators set their own subscription pricing, offer tiered membership levels, and sell pay-per-view content. The platform takes a percentage fee on earnings while creators retain the majority of revenue. Fanvue targets independent creators seeking sustainable income streams without relying on advertising or platform algorithms. Use cases include adult content, fitness coaching, art, music, education, and niche communities. Fanvue emphasizes creator control, direct monetization, and fan engagement, positioning itself as a comprehensive platform for building creator businesses.",
+    "category": "Marketing",
+    "pricingModel": "Paid",
+    "tags": [
+      "creators",
+      "subscription",
+      "content",
+      "monetization"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recgva561yXmTlkyA",
+    "name": "Card Slinger 3.0",
+    "url": "https://cults3d.com/en/3d-model/game/card-slinger-1-0-for-mtg-manabox-easily-scan-in-bulk-quantities-of-cards-b",
+    "description": "3D printable card scanner for MTG/ManaBox",
+    "detailed": "Card Slinger 3.0 is a 3D printable card scanner device designed specifically for bulk scanning Magic: The Gathering (MTG) cards into inventory management apps like ManaBox. The paid design (available on Cults3D) allows users to rapidly scan card barcodes or images, significantly speeding up the process of cataloging large MTG collections. The device provides a stable, consistent scanning angle and positioning for smartphone cameras, ensuring accurate card recognition by collection apps. Card Slinger 3.0 improves on previous versions with better stability, adjustable phone mounts, and optimized scanning workflows. Use cases include organizing personal MTG collections, valuing card portfolios, preparing for trades or sales, and maintaining inventory for game stores or collectors. The 3D printable design democratizes access to scanning hardware at low cost compared to commercial alternatives. Card Slinger targets MTG players, collectors, and traders who manage large card collections and need efficient digitization tools. The product represents the intersection of gaming, 3D printing, and practical problem-solving for hobby enthusiasts seeking DIY solutions.",
+    "category": "Other",
+    "pricingModel": "Paid",
+    "tags": [
+      "3d-printing",
+      "mtg",
+      "gaming",
+      "hardware"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "rechdBKyH26Pv2xox",
+    "name": "BusyStatusBar",
+    "url": "https://busy.bar/shop",
+    "description": "BUSY Bar hardware device",
+    "detailed": "BusyStatusBar (BUSY Bar) is a hardware device designed to communicate availability status in physical spaces for remote workers, hybrid teams, and co-working environments. The paid product is a desk-mounted LED bar that displays visual indicators (colors, patterns) showing whether someone is in a meeting, available for conversation, deep-focused, or away. The device typically syncs with calendar systems, communication tools like Slack or Microsoft Teams, and manual status controls to automatically update availability based on scheduled meetings or explicit user input. Use cases include home offices, co-working spaces, and hybrid work environments where visual availability cues improve communication efficiency and reduce interruptions. BUSY Bar helps remote workers establish boundaries, signal presence without verbal communication, and integrate physical status indicators similar to office-based availability cues. The device connects via USB or WiFi, integrates with productivity software through APIs, and often offers customization of colors and patterns. BusyStatusBar targets professionals, distributed teams, and workspaces seeking better communication workflows through ambient status signaling hardware.",
+    "category": "Other",
+    "pricingModel": "Paid",
+    "tags": [
+      "hardware",
+      "productivity",
+      "status"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "reciBpvnyouTlxdCy",
+    "name": "Aspecta",
+    "url": "https://aspecta.ai/",
+    "description": "Open economy for alpha assets",
+    "detailed": "Aspecta is a Web3 platform focused on building an open economy for alpha assets—valuable insights, early access opportunities, exclusive data, and high-signal information in the crypto and blockchain space. The platform uses AI and blockchain technology to verify, tokenize, and trade alpha-generating knowledge, research, and predictions. Aspecta aims to create a marketplace where researchers, analysts, traders, and insiders can monetize their expertise while providing users with access to premium market intelligence. The ecosystem includes reputation systems, NFT-based credentials, AI-powered discovery, and decentralized verification of alpha sources. Users can stake tokens, participate in prediction markets, and earn rewards for contributing valuable insights. Aspecta targets crypto traders, DeFi researchers, and Web3 professionals seeking competitive advantages through curated, verifiable information streams. The platform emphasizes transparency, incentive alignment, and community-driven curation to separate high-quality alpha from noise in the crypto information landscape.",
+    "category": "Crypto",
+    "pricingModel": "Unknown",
+    "tags": [
+      "crypto",
+      "ai",
+      "web3"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "reciFP3eXX4HsZeaf",
+    "name": "n8n",
+    "url": "https://n8n.io/secops/",
+    "description": "Workflow automation tool",
+    "detailed": "n8n is an open-source workflow automation platform that allows users to connect apps, services, and APIs to automate repetitive tasks and business processes without coding. The tool provides a visual interface where users drag and drop nodes representing different services (Gmail, Slack, databases, webhooks, etc.) and connect them to build workflows that execute automatically based on triggers like new emails, form submissions, scheduled times, or API events. n8n supports over 400 integrations, custom code execution (JavaScript/Python), conditional logic, loops, error handling, and advanced data transformations. The platform can be self-hosted for complete data control or used via n8n Cloud for managed hosting. n8n is particularly popular in security operations (SecOps) for automating incident response, threat detection, log analysis, and security alert workflows. Use cases span marketing automation, data synchronization, ETL processes, DevOps pipelines, and business intelligence. n8n offers both free and paid tiers, with enterprise features including SSO, advanced permissions, and SLA support. The platform emphasizes flexibility, transparency, and community-driven development.",
+    "category": "Productivity",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "automation",
+      "workflow",
+      "productivity"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "reciGaxNHyzL1C5Ve",
+    "name": "LangChain",
+    "url": "https://www.langchain.com/",
+    "description": "Framework for building LLM applications",
+    "detailed": "LangChain is an open-source framework for building applications powered by large language models (LLMs) such as GPT-4, Claude, and open-source models. The framework provides modular components, abstractions, and tools for chaining together LLM calls, integrating external data sources, implementing memory systems, and creating complex agent-based workflows. LangChain supports Python and JavaScript/TypeScript, offering libraries for prompt management, retrieval-augmented generation (RAG), tool use, conversational interfaces, and production deployment. Developers use LangChain to build chatbots, question-answering systems, document analysis tools, code assistants, research agents, and custom AI applications. The framework emphasizes composability, allowing developers to mix and match components like vector stores, prompt templates, output parsers, and agent executors. LangChain offers both free open-source libraries and paid enterprise services including LangSmith (observability platform) and LangServe (deployment framework). The ecosystem includes extensive documentation, community contributions, and integrations with major LLM providers and data infrastructure. LangChain has become a foundational tool for LLM application development, used by startups, enterprises, and researchers building production-grade AI systems.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "llm",
+      "development",
+      "framework"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "reckLToIT2YBclwmJ",
+    "name": "Omi AI",
+    "url": "https://www.omi.me/",
+    "description": "Thought to action AI assistant",
+    "detailed": "Omi AI is an artificial intelligence assistant platform designed to transform thoughts into actions through natural language understanding and intelligent automation. The platform focuses on proactive AI that anticipates user needs, suggests actions, and executes tasks across multiple applications and services. Omi AI integrates with productivity tools, communication platforms, calendars, project management software, and personal devices to create a unified assistant experience. Users can delegate tasks like scheduling meetings, sending messages, managing to-do lists, researching topics, and controlling smart home devices through conversational interactions. The platform emphasizes context awareness, learning user preferences over time, and seamless cross-platform operation. Omi AI targets busy professionals, executives, and teams seeking to offload routine cognitive tasks and improve productivity through intelligent automation. The service offers various pricing tiers, with premium features including advanced integrations, team collaboration, and custom workflows. Omi AI aims to serve as a personal chief of staff, handling coordination, communication, and execution so users can focus on strategic and creative work.",
+    "category": "AI",
+    "pricingModel": "Unknown",
+    "tags": [
+      "ai",
+      "assistant",
+      "productivity"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "reckfB8lgXCIReEuy",
+    "name": "ElevenLabs",
+    "url": "https://elevenlabs.io/",
+    "description": "Text-to-speech and AI voice generator",
+    "detailed": "ElevenLabs is a leading AI voice technology platform specializing in text-to-speech (TTS) and voice cloning using advanced deep learning models. The platform generates highly realistic, emotionally expressive synthetic voices in multiple languages and accents from text input. ElevenLabs offers pre-made voice libraries (various ages, genders, tones) and custom voice cloning where users can create personalized AI voices from audio samples. Use cases include audiobook narration, video content voice-overs, game character voices, accessibility tools, virtual assistants, and multimedia production. The platform provides API access for developers integrating voice generation into applications, as well as a web interface for direct use. ElevenLabs offers both free and paid tiers, with premium plans providing more characters, faster processing, commercial licensing, and advanced voice customization. The platform emphasizes voice quality, emotional nuance, and natural prosody, making AI-generated speech nearly indistinguishable from human recordings. ElevenLabs is popular among content creators, game developers, app developers, and businesses needing scalable, high-quality voice generation without hiring voice actors for every project.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "tts",
+      "voice",
+      "audio"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "reclZgZUdMDIOVaKr",
+    "name": "Product Hunt",
+    "url": "https://www.producthunt.com/",
+    "description": "Platform for discovering new tech products",
+    "detailed": "Product Hunt is a community-driven platform for discovering, sharing, and discussing new tech products, apps, websites, and hardware. Users submit and upvote products daily, creating ranked lists of trending launches across categories like productivity, developer tools, design, AI, and more. Product Hunt serves as a launchpad for startups and makers to gain visibility, gather early feedback, and connect with potential users and investors. The free platform features daily rankings, product collections, discussions, and maker profiles. Users can follow topics, save products, leave reviews, and engage with founders. Product Hunt has become a key part of product launch strategies, with successful launches often driving significant traffic, media coverage, and user acquisition. The community includes entrepreneurs, investors, developers, designers, and tech enthusiasts. Product Hunt also offers paid features like promoted posts and analytics for makers. The platform emphasizes early access, innovation, and community engagement, functioning as both a discovery engine for users and a marketing channel for product teams building in public.",
+    "category": "Other",
+    "pricingModel": "Free",
+    "tags": [
+      "products",
+      "discovery",
+      "tech",
+      "community"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recmbiqJAbFAObUPa",
+    "name": "Freesets",
+    "url": "https://freesets.dev/",
+    "description": "Free development resources and design sets",
+    "detailed": "Freesets is a curated directory and resource hub offering free development tools, design assets, and educational materials for developers, designers, and creators. The platform aggregates open-source projects, free UI kits, icon packs, fonts, code libraries, frameworks, templates, and learning resources across web development, mobile development, design, and DevOps. Users can browse categories, search by technology stack, and discover high-quality free alternatives to paid software and services. Freesets emphasizes community contributions, open-source initiatives, and zero-cost resources to lower barriers for learning and building digital products. The platform is particularly valuable for students, bootstrapped startups, hobbyists, and professionals exploring new technologies without financial commitment. Each listing includes descriptions, licensing information, platform compatibility, and direct links to repositories or download pages. Freesets serves as a starting point for cost-effective development and design workflows.",
+    "category": "Development",
+    "pricingModel": "Free",
+    "tags": [
+      "development",
+      "design",
+      "resources",
+      "free"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recmusJ7mEO0CIOfd",
+    "name": "Surf AI",
+    "url": "https://asksurf.ai/",
+    "description": "Crypto-focused AI assistant",
+    "detailed": "Surf AI is a crypto-focused artificial intelligence assistant designed to help traders, investors, and enthusiasts navigate the cryptocurrency market through natural language queries and automated analysis. The platform provides real-time market data, on-chain analytics, sentiment analysis, token research, and portfolio tracking through conversational AI interfaces. Users can ask questions like 'What's the current sentiment around Ethereum?' or 'Show me whale transactions for Solana in the last 24 hours,' and Surf AI delivers actionable insights. The tool integrates with blockchain explorers, DEX aggregators, news sources, and social media platforms to provide comprehensive market intelligence. Surf AI offers both free and paid tiers, with premium features including advanced alerts, custom dashboards, and deeper on-chain analysis. The platform is particularly useful for DeFi participants, NFT traders, and crypto researchers who need quick access to complex market data without manually querying multiple sources. Surf AI aims to democratize crypto market intelligence through accessible AI-powered tools.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "crypto",
+      "assistant"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recnHiOwuNlhh4zj7",
+    "name": "AnythingLLM",
+    "url": "https://anythingllm.com/",
+    "description": "All-in-one AI application for everyone",
+    "detailed": "AnythingLLM is an all-in-one, privacy-focused AI application that allows users to interact with multiple large language models through a unified interface while maintaining complete data control. The free, open-source platform supports integration with various LLM providers (OpenAI, Anthropic, local models via LM Studio, Ollama) and enables users to build custom knowledge bases by uploading documents, connecting to databases, and scraping websites. AnythingLLM provides document embedding and retrieval-augmented generation (RAG) capabilities, allowing the AI to answer questions based on user-provided data rather than just general knowledge. The application includes workspace management for organizing different projects, conversation history, custom prompts, and agent capabilities for complex tasks. AnythingLLM can run entirely locally or connect to cloud LLM providers based on user preference, emphasizing privacy and data sovereignty. The platform targets individuals, small businesses, and teams seeking versatile AI tools without vendor lock-in or data privacy concerns. Features include multi-user support, API access, and extensive customization options. AnythingLLM serves as a personal AI assistant platform adaptable to diverse use cases from research to customer support to creative writing.",
+    "category": "AI",
+    "pricingModel": "Free",
+    "tags": [
+      "ai",
+      "llm",
+      "productivity"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recnrkJrHs9Bfl93o",
+    "name": "Invoce.ai",
+    "url": "https://www.invoce.ai/?ref=producthunt",
+    "description": "AI invoice generator for freelancers and small businesses",
+    "detailed": "Invoce.ai is an AI-powered invoice generation platform tailored for freelancers, solopreneurs, and small businesses. The tool uses artificial intelligence to automate invoice creation, calculate taxes, apply appropriate formatting, and generate professional-looking billing documents in seconds. Users input basic transaction details (client, services, amounts), and Invoce.ai handles VAT/GST calculations, currency conversions, payment terms, and branding customization. The platform supports multiple invoice templates, recurring billing schedules, payment tracking, and client management. Invoce.ai offers both free and paid tiers, with premium features including unlimited invoices, custom branding, automated reminders, and integration with accounting software. The AI assistant can suggest pricing based on market rates, recommend payment terms, and flag potential errors. Ideal for freelancers who need fast, accurate invoicing without accounting software overhead, Invoce.ai reduces administrative burden and ensures professional financial documentation.",
+    "category": "Finance",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "invoicing",
+      "freelance",
+      "finance"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "reco6koGDvoBppLA3",
+    "name": "Manus",
+    "url": "https://manus.im/",
+    "description": "Hands-on AI tools",
+    "detailed": "Manus is a platform offering hands-on AI tools designed for practical, everyday use across various tasks and workflows. While specific product details require further investigation, the platform likely provides AI-powered utilities for productivity, content creation, data analysis, or automation. Manus appears to focus on making AI accessible through intuitive, task-specific tools rather than general-purpose chatbots. The platform may offer features like document processing, image manipulation, text generation, data extraction, or workflow automation powered by machine learning models. Potential use cases could include content summarization, format conversion, data cleaning, or creative assistance. Manus likely targets professionals, freelancers, and teams seeking specialized AI tools for recurring tasks without complex setup or API management. The platform's positioning suggests emphasis on usability, practical applications, and tangible productivity gains. For accurate details about Manus's specific tools, features, pricing, and target users, direct exploration of the platform is recommended.",
+    "category": "AI",
+    "pricingModel": "Unknown",
+    "tags": [
+      "ai",
+      "productivity",
+      "tools"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recoxxPXgxVYMWzM8",
+    "name": "LMArena",
+    "url": "https://lmarena.ai/?mode=side-by-side",
+    "description": "LLM model comparison and benchmarking",
+    "detailed": "LMArena (LLM Arena) is a platform for comparing and benchmarking large language models through side-by-side interactions and crowdsourced evaluations. The free tool allows users to submit the same prompt to multiple LLMs simultaneously and compare responses, helping users understand strengths, weaknesses, and stylistic differences between models like GPT-4, Claude, Gemini, Llama, and various open-source alternatives. LMArena features blind testing modes where users vote on which response is better without knowing which model generated it, producing unbiased performance rankings. The platform aggregates user votes into Elo-style leaderboards showing relative model performance across categories like instruction following, reasoning, creativity, and factual accuracy. LMArena is valuable for AI researchers, developers choosing models for applications, and anyone curious about LLM capabilities. The platform emphasizes transparency, community-driven evaluation, and practical performance metrics beyond academic benchmarks. LMArena helps democratize understanding of AI capabilities by allowing direct comparison and crowdsourced assessment, making model selection decisions more informed and data-driven.",
+    "category": "AI",
+    "pricingModel": "Free",
+    "tags": [
+      "ai",
+      "llm",
+      "benchmarking",
+      "research"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recozPhCk90I3wf9U",
+    "name": "Fun.xyz",
+    "url": "https://fun.xyz/",
+    "description": "Web3 gaming and entertainment platform",
+    "detailed": "Fun.xyz is a Web3 gaming and entertainment platform that combines blockchain technology, NFTs, and decentralized applications to create interactive gaming experiences with true asset ownership. The free platform allows users to play blockchain-based games, collect and trade NFTs, participate in gaming tournaments, and earn cryptocurrency rewards through play-to-earn mechanics. Fun.xyz aggregates games across multiple blockchain networks, providing a unified interface for discovering and playing Web3 games without managing multiple wallets or platforms. The platform supports various game genres including strategy, RPG, casual, and competitive multiplayer games. Users can connect their crypto wallets, manage in-game assets, track achievements, and participate in community events. Fun.xyz targets gamers interested in Web3, NFT collectors, and players seeking monetization opportunities through gaming. The platform emphasizes user experience, low-barrier entry for non-crypto-native gamers, and interoperability of digital assets across games. Fun.xyz aims to bridge traditional gaming and Web3, making blockchain gaming accessible to mainstream audiences.",
+    "category": "Crypto",
+    "pricingModel": "Free",
+    "tags": [
+      "web3",
+      "gaming",
+      "crypto"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recpIr08HHfKq9eeU",
+    "name": "Superform",
+    "url": "https://app.superform.xyz/",
+    "description": "DeFi yield optimization platform",
+    "detailed": "Superform is a DeFi (Decentralized Finance) yield optimization platform that enables users to access and manage yield-generating opportunities across multiple blockchain networks from a single interface. The protocol aggregates liquidity from various DeFi protocols, including Aave, Compound, Yearn, and others, allowing users to deposit assets and automatically earn optimal yields through smart routing and automated strategy execution. Superform supports cross-chain interactions, enabling users to move assets between Ethereum, Arbitrum, Optimism, Polygon, and other EVM-compatible chains without manual bridging. Key features include automated yield farming, risk-adjusted strategy selection, gas optimization, and portfolio tracking. The platform targets DeFi users, institutional investors, and DAOs seeking efficient capital deployment and maximized returns on crypto assets. Superform emphasizes security through audited smart contracts, transparent strategy management, and non-custodial architecture, ensuring users maintain control of their funds while accessing sophisticated yield strategies.",
+    "category": "Crypto",
+    "pricingModel": "Free",
+    "tags": [
+      "defi",
+      "yield",
+      "crypto",
+      "ethereum"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recpV1jTYmbasGyEl",
+    "name": "React Bits",
+    "url": "https://reactbits.dev/",
+    "description": "React components and development resources",
+    "detailed": "React Bits is a comprehensive resource platform for React developers, offering reusable components, code snippets, patterns, best practices, and learning materials. The site provides both free and paid React components covering common UI patterns like modals, dropdowns, forms, data tables, authentication flows, and animations. Each component includes source code, documentation, usage examples, and customization options. React Bits also features tutorials, design patterns, performance optimization tips, and architectural guidance for building scalable React applications. The platform supports modern React features including hooks, context API, server components, and Next.js integration. Paid tiers offer premium components, advanced patterns, starter templates, and priority support. React Bits targets intermediate to advanced React developers looking to accelerate development, maintain code quality, and implement industry-standard patterns. The platform emphasizes clean code, accessibility, TypeScript support, and modern React conventions.",
+    "category": "Development",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "react",
+      "development",
+      "components"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recq7BTs6DWsbITVd",
+    "name": "Daylight",
+    "url": "https://godaylight.com/",
+    "description": "Calendar and scheduling tool",
+    "detailed": "Daylight is a decentralized residential energy network that provides solar power generation, battery storage, and 24/7 backup power to homeowners without upfront costs. Subscribers get solar panel installation, battery backup systems, full-service maintenance, and below-market energy rates through a subscription model. The platform transforms homes into mini power plants that generate and store energy daily, with Daylight managing maintenance and optimization. Excess energy stored in home batteries is traded with the grid, earning users Sun Points rewards for supporting grid reliability. The service addresses rising electricity costs and increasing blackout risks (10X more common than in 1980) by creating a distributed energy network. Daylight covers installation costs, handles equipment servicing, and provides outage protection while users benefit from renewable energy, reduced bills, and rewards for contributing to a more resilient power infrastructure.",
+    "category": "Productivity",
+    "pricingModel": "Unknown",
+    "tags": [
+      "calendar",
+      "productivity",
+      "scheduling"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recqNrMagRj0PxAxy",
+    "name": "NotebookLM",
+    "url": "https://notebooklm.google.com/",
+    "description": "Google's AI-powered note-taking and research tool",
+    "detailed": "NotebookLM is Google's AI-powered note-taking and research assistant that helps users synthesize information from multiple sources into organized, actionable knowledge. The free tool allows users to upload documents (PDFs, text files, links) and create a personalized AI that understands the specific content and can answer questions, generate summaries, create outlines, and surface connections between ideas. Unlike general-purpose AI chatbots, NotebookLM is grounded in user-provided sources, reducing hallucinations and ensuring responses are based on actual uploaded content. The platform supports research workflows, academic writing, project planning, and knowledge management. Key features include source-grounded answers, automatic citation of sources, multi-document analysis, conversation history, and shareable notebooks. NotebookLM targets students, researchers, writers, professionals, and anyone working with large volumes of information who needs AI assistance to understand, organize, and synthesize content. Google emphasizes privacy and data control, with uploaded content used only within individual notebooks and not for model training. NotebookLM represents Google's vision of personalized AI assistants tailored to individual knowledge bases.",
+    "category": "AI",
+    "pricingModel": "Free",
+    "tags": [
+      "ai",
+      "notes",
+      "research",
+      "google"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recqgyF9mpOuckM5i",
+    "name": "SOUNDRAW",
+    "url": "https://soundraw.io/",
+    "description": "AI music generator for royalty-free beats",
+    "detailed": "SOUNDRAW is an AI-powered music generation platform that creates royalty-free background music for content creators, filmmakers, podcasters, and businesses. The tool uses artificial intelligence to compose original music tracks based on user-selected moods, genres, themes, and lengths. Users customize parameters like tempo, energy level, instruments, and structure, and SOUNDRAW generates unique compositions that fit their needs. The platform offers both free and paid tiers, with premium subscriptions providing unlimited downloads, commercial licensing, and higher quality exports. SOUNDRAW addresses copyright concerns by generating entirely original music, ensuring users can monetize content without copyright strikes or licensing fees. Use cases include YouTube videos, podcasts, advertisements, games, presentations, and any media requiring background music. The platform targets content creators, small businesses, and independent filmmakers who need affordable, customizable music without hiring composers or navigating complex licensing. SOUNDRAW provides an intuitive interface for non-musicians to create professional-sounding music tailored to specific projects. The tool represents the growing intersection of AI and creative industries, democratizing music production.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "music",
+      "royalty-free",
+      "audio-generation"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recrbUAqu0hLkGHjl",
+    "name": "Okara",
+    "url": "https://okara.ai/",
+    "description": "Chat privately with open-source models",
+    "detailed": "Okara AI is a privacy-focused platform for chatting with open-source language models entirely on your local device or through privacy-preserving infrastructure. The free tool allows users to interact with models like Llama, Mistral, GPT-style open-source variants, and other publicly available LLMs without sending data to third-party servers. Okara emphasizes zero data collection, end-to-end encryption if using cloud instances, and transparent processing. The platform provides a simple chat interface, model selection, conversation history, and customization options for temperature, context length, and system prompts. Use cases include sensitive conversations, confidential document analysis, private research, and situations where data privacy is paramount. Okara targets journalists, legal professionals, healthcare workers, researchers, and privacy-conscious individuals who need AI assistance without exposing sensitive information. The tool supports both local execution (for users with capable hardware) and privacy-first hosted options. Okara represents a growing movement toward private, user-controlled AI infrastructure that prioritizes data sovereignty and transparency over convenience.",
+    "category": "AI",
+    "pricingModel": "Free",
+    "tags": [
+      "ai",
+      "privacy",
+      "open-source"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "rectBTi70nkYePAzH",
+    "name": "Meshy",
+    "url": "https://www.meshy.ai/discover",
+    "description": "3D model generation and community",
+    "detailed": "Meshy AI is a platform for AI-powered 3D model generation and discovery, enabling users to create 3D assets from text descriptions, images, or sketches using generative AI. The tool allows game developers, 3D artists, VR/AR creators, and designers to rapidly generate 3D models, textures, and meshes without traditional 3D modeling skills. Meshy offers both free and paid tiers, with premium features including higher resolution models, faster generation, commercial licensing, and export to standard 3D formats (OBJ, FBX, glTF). The platform includes a community discovery feed where users can browse, share, and remix 3D creations. Use cases include game asset production, prototyping, concept visualization, AR/VR content creation, and 3D printing. Meshy supports various generation modes including text-to-3D, image-to-3D, and AI texturing for existing models. The platform targets 3D artists seeking rapid prototyping tools, indie game developers with limited 3D modeling resources, and hobbyists exploring 3D creation. Meshy represents the growing intersection of generative AI and 3D graphics, making 3D asset creation more accessible and efficient.",
+    "category": "AI",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "ai",
+      "3d-models",
+      "generation",
+      "community"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recuhWeJOt2xsEMGK",
+    "name": "Hak5 O.MG Cable",
+    "url": "https://shop.hak5.org/collections/home1/products/omg-cable?variant=39808316276849",
+    "description": "Security testing cable for penetration testing",
+    "detailed": "The Hak5 O.MG Cable is an advanced security testing and penetration testing tool disguised as a legitimate USB charging cable (Lightning, USB-C, or Micro-USB). Despite appearing identical to standard cables, the O.MG Cable contains a hidden WiFi-enabled implant that allows security researchers, penetration testers, and red teams to remotely execute payloads, capture keystrokes, establish reverse shells, and perform various offensive security operations. The cable can be controlled via a smartphone or laptop over WiFi, enabling covert testing scenarios where physical access is limited. Use cases include authorized penetration testing, security awareness training, vulnerability assessments, and social engineering simulations. The O.MG Cable is sold exclusively for legal security research and testing purposes, and buyers must acknowledge responsible use. Priced as a professional security tool, the cable demonstrates physical attack vectors and insider threat scenarios, helping organizations understand and mitigate USB-based attack risks. Hak5 provides documentation, payloads, and community support for security professionals using the tool in authorized engagements.",
+    "category": "Security",
+    "pricingModel": "Paid",
+    "tags": [
+      "security",
+      "hacking",
+      "hardware",
+      "pentest"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recwqLGg2pIWWBr5N",
+    "name": "Daimo Pay",
+    "url": "https://pay.daimo.com/",
+    "description": "One-click crypto payments",
+    "detailed": "Daimo Pay is a one-click cryptocurrency payment solution that simplifies sending and receiving digital assets with minimal friction. The free platform focuses on instant, low-cost payments using stablecoins and other cryptocurrencies, eliminating complex wallet addresses, gas fees, and multi-step processes typical of crypto transactions. Daimo Pay likely uses account abstraction, payment links, or QR codes to enable payments as simple as traditional payment apps like Venmo or Cash App. The platform targets crypto-native users, merchants, and applications needing streamlined payment experiences without sacrificing decentralization or security. Use cases include peer-to-peer payments, tipping content creators, splitting bills, merchant payments, and remittances. Daimo Pay may integrate with Layer 2 networks like Optimism or Base to achieve fast, cheap transactions. The platform emphasizes accessibility, making crypto payments so simple that non-crypto-native users can adopt them without understanding blockchain mechanics. Daimo Pay represents the evolution of crypto payments toward mainstream usability, bridging the gap between decentralized finance and everyday transaction needs.",
+    "category": "Crypto",
+    "pricingModel": "Free",
+    "tags": [
+      "crypto",
+      "payments",
+      "one-click"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  },
+  {
+    "id": "recxTej6d3Wac2rDO",
+    "name": "Awwwards",
+    "url": "https://www.awwwards.com/",
+    "description": "Website awards for best web design trends",
+    "detailed": "Awwwards is a prestigious platform that recognizes and celebrates excellence in web design, development, and digital creativity. The platform reviews and awards websites based on design quality, creativity, usability, content, and mobile experience, featuring daily winners across various categories. Awwwards serves as an inspiration gallery, portfolio showcase, and industry benchmark for web professionals. The community includes designers, developers, agencies, and brands competing for recognition and visibility. Beyond awards, Awwwards offers educational content, design conferences, job boards, and premium memberships with exclusive features like project submissions, detailed feedback, and advanced portfolio tools. The platform influences web design trends, celebrates innovation, and provides motivation for creators to push boundaries. Awwwards is a go-to resource for designers seeking inspiration, clients researching agencies, and professionals staying current with design trends. The free platform (with paid premium features) has become synonymous with high-quality web design, functioning as both a competition platform and a curated showcase of the internet's best digital experiences. Winning an Awwwards recognition is considered a significant achievement in the web design industry.",
+    "category": "Other",
+    "pricingModel": "Free/Paid",
+    "tags": [
+      "web-design",
+      "awards",
+      "inspiration",
+      "community"
+    ],
+    "votes": 0,
+    "createdAt": "2026-02-09T16:35:37.000Z"
+  }
+]

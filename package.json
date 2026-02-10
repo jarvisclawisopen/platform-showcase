@@ -1,0 +1,50 @@
+{
+  "name": "app-showcase-v2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A premium web application showcasing 72 cutting-edge platforms with AI, crypto, design, and more",
+  "author": "Platform Showcase",
+  "license": "MIT",
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "tailwindcss",
+    "framer-motion",
+    "showcase",
+    "platforms",
+    "portfolio"
+  ],
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "clean": "rm -rf .next node_modules"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.9",
+    "@heroicons/react": "^2.2.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.468.0",
+    "next": "^16.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^16.1.6",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.0.0"
+  }
+}
