@@ -1,21 +1,26 @@
-'use client';
-
 export default function Footer() {
   return (
-    <footer className="fixed bottom-6 left-0 right-0 z-50">
-      <div className="max-w-6xl mx-auto px-8 flex items-center justify-between text-sm">
-        <span className="text-black/60">
-          © platform showcase 2026
-        </span>
-        <div className="flex gap-8">
-          <a href="https://github.com" className="text-[#0000ff] hover:opacity-70">
-            github
+    <footer className="pt-16 pb-8 border-t border-gray-200">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p className="text-[#666] text-sm">
+          © 2026 Platform Showcase. All rights reserved.
+        </p>
+        <div className="flex gap-6">
+          <a 
+            href="https://github.com" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#666] hover:text-[#1A1A1A] text-sm transition-colors"
+          >
+            GitHub
           </a>
-          <a href="https://twitter.com" className="text-[#0000ff] hover:opacity-70">
-            twitter
-          </a>
-          <a href="https://instagram.com" className="text-[#0000ff] hover:opacity-70">
-            instagram
+          <a 
+            href="https://twitter.com" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#666] hover:text-[#1A1A1A] text-sm transition-colors"
+          >
+            Twitter
           </a>
         </div>
       </div>
