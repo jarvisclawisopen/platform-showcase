@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import BackgroundGradientAnimation from './components/aceternity/BackgroundGradientAnimation';
+import MeshGradient from './components/aceternity/MeshGradient';
 import Spotlight from './components/aceternity/Spotlight';
 import Hero from './components/Hero';
 import FilterBar from './components/FilterBar';
@@ -145,9 +145,9 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-navy relative overflow-hidden">
-      {/* Aceternity animated background */}
-      <BackgroundGradientAnimation />
+    <main className="min-h-screen relative overflow-hidden">
+      {/* Mesh gradient background */}
+      <MeshGradient />
       
       {/* Spotlight effect */}
       <Spotlight />

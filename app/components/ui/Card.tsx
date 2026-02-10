@@ -13,32 +13,38 @@ export default function Card({
   children, 
   className, 
   hover = true,
-  glow = false,
+  glow = true,
   gradient = false
 }: CardProps) {
   return (
     <div
       className={cn(
-        'group relative h-full animate-fade-in',
+        'group relative h-full',
         className
       )}
     >
       {/* Glow effect */}
       {glow && (
-        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500"></div>
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/50 via-purple-500/50 to-pink-500/50 rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-all duration-500" />
       )}
       
       {/* Gradient border effect */}
       {gradient && (
-        <div className="absolute -inset-px bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+        <div className="absolute -inset-px bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500" />
       )}
       
-      {/* Card content */}
+      {/* Card content with glassmorphism */}
       <div className={cn(
-        'relative h-full bg-navy-light/40 backdrop-blur-xl border border-white/10 rounded-2xl p-6 flex flex-col transition-all duration-300',
-        hover && 'group-hover:border-white/20 group-hover:shadow-2xl group-hover:shadow-purple/20 group-hover:-translate-y-1',
+        'relative h-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 flex flex-col transition-all duration-300 shadow-xl shadow-black/20',
+        hover && 'group-hover:border-white/20 group-hover:bg-white/10 group-hover:shadow-2xl group-hover:shadow-purple-500/20 group-hover:-translate-y-2',
       )}>
-        {children}
+        {/* Inner gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        
+        {/* Content */}
+        <div className="relative z-10">
+          {children}
+        </div>
       </div>
     </div>
   );
@@ -51,7 +57,7 @@ interface CardHeaderProps {
 
 export function CardHeader({ children, className }: CardHeaderProps) {
   return (
-    <div className={cn('mb-4', className)}>
+    <div className={cn('mb-6', className)}>
       {children}
     </div>
   );
@@ -64,7 +70,7 @@ interface CardTitleProps {
 
 export function CardTitle({ children, className }: CardTitleProps) {
   return (
-    <h3 className={cn('text-2xl font-bold text-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300', className)}>
+    <h3 className={cn('text-2xl font-bold text-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:via-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300', className)}>
       {children}
     </h3>
   );
@@ -103,7 +109,7 @@ interface CardFooterProps {
 
 export function CardFooter({ children, className }: CardFooterProps) {
   return (
-    <div className={cn('pt-4 border-t border-white/10', className)}>
+    <div className={cn('pt-6 mt-6 border-t border-white/10', className)}>
       {children}
     </div>
   );
