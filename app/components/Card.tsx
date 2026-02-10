@@ -13,19 +13,19 @@ export default function Card({ app }: CardProps) {
       target="_blank"
       rel="noopener noreferrer"
       className="
-        block bg-white rounded-[12px] overflow-hidden
-        shadow-[0_2px_8px_rgba(0,0,0,0.06)]
-        hover:shadow-[0_8px_16px_rgba(0,0,0,0.12)]
-        hover:-translate-y-1
-        transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]
-        focus:outline-none focus:ring-2 focus:ring-[#1A1A1A] focus:ring-offset-2
+        group block bg-white rounded-2xl overflow-hidden border border-neutral-200
+        hover:border-indigo-200 hover:shadow-lg hover:shadow-indigo-50
+        transition-all duration-200
+        focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2
       "
       role="listitem"
       aria-label={`View ${app.name}`}
     >
       {/* Image placeholder */}
-      <div className="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-        <span className="text-4xl font-bold text-gray-400">
+      <div className="w-full h-44 bg-gradient-to-br from-neutral-50 to-neutral-100 
+                      flex items-center justify-center
+                      group-hover:from-indigo-50 group-hover:to-indigo-100 transition-all duration-200">
+        <span className="text-5xl font-semibold text-neutral-300 group-hover:text-indigo-300 transition-colors">
           {app.name.charAt(0)}
         </span>
       </div>
@@ -33,21 +33,21 @@ export default function Card({ app }: CardProps) {
       {/* Content */}
       <div className="p-6">
         {/* Title */}
-        <h3 className="text-xl font-bold text-[#1A1A1A] mb-2">
+        <h3 className="text-lg font-semibold text-neutral-900 mb-2 group-hover:text-indigo-600 transition-colors">
           {app.name}
         </h3>
 
         {/* Description */}
-        <p className="text-[#666] text-sm mb-4 line-clamp-2 leading-relaxed">
+        <p className="text-neutral-600 text-sm mb-4 line-clamp-2 leading-relaxed">
           {app.description}
         </p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1.5">
           {app.tags.slice(0, 3).map((tag, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-[#F5F5F5] text-[#666] text-xs font-medium rounded-full"
+              className="px-2.5 py-1 bg-neutral-100 text-neutral-600 text-xs font-medium rounded-md"
             >
               {tag}
             </span>

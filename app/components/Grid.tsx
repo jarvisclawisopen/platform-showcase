@@ -10,15 +10,15 @@ interface GridProps {
 export default function Grid({ apps }: GridProps) {
   if (apps.length === 0) {
     return (
-      <div className="text-center py-20">
-        <p className="text-[#666] text-lg">No platforms found in this category.</p>
+      <div className="text-center py-24">
+        <p className="text-neutral-500 text-lg">No platforms found in this category.</p>
       </div>
     );
   }
 
   return (
     <div 
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mb-20"
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24"
       role="list"
     >
       {apps.map((app) => (

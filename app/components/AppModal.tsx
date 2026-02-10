@@ -31,39 +31,40 @@ export default function AppModal({
       {/* Backdrop */}
       <div
         onClick={onClose}
-        className="fixed inset-0 bg-black/30 z-50"
+        className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50"
       />
 
       {/* Modal */}
       <div className="fixed inset-0 z-50 overflow-y-auto">
-        <div className="flex min-h-full items-center justify-center p-8">
+        <div className="flex min-h-full items-center justify-center p-4 md:p-8">
           <div
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-2xl bg-[#ededf7] rounded-3xl p-12"
+            className="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl p-8 md:p-12"
           >
             <button
               onClick={onClose}
-              className="absolute top-8 right-8 text-black/40 hover:text-black transition-colors"
+              className="absolute top-6 right-6 text-neutral-400 hover:text-neutral-900 transition-colors"
+              aria-label="Close modal"
             >
               <X size={24} />
             </button>
 
-            <h2 className="text-4xl font-medium text-black mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-neutral-900 mb-4">
               {app.name}
             </h2>
             
-            <div className="flex items-center gap-3 mb-8">
-              <span className="px-4 py-1.5 bg-[#d4d4f0] rounded-full text-sm font-medium">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="px-4 py-1.5 bg-indigo-50 text-indigo-600 rounded-lg text-sm font-medium">
                 {app.category}
               </span>
-              <span className="text-sm text-black/60">{app.pricingModel}</span>
+              <span className="text-sm text-neutral-500">{app.pricingModel}</span>
             </div>
 
-            <p className="text-black/80 leading-relaxed mb-6">
+            <p className="text-neutral-700 leading-relaxed mb-6 text-lg">
               {app.description}
             </p>
 
-            <p className="text-black/60 leading-relaxed mb-8 text-sm whitespace-pre-line">
+            <p className="text-neutral-600 leading-relaxed mb-8 text-sm whitespace-pre-line">
               {app.detailed}
             </p>
 
@@ -73,7 +74,7 @@ export default function AppModal({
                   {app.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1 bg-white/40 rounded-full text-xs text-black/60"
+                      className="px-3 py-1.5 bg-neutral-100 text-neutral-600 rounded-md text-xs font-medium"
                     >
                       #{tag}
                     </span>
@@ -82,13 +83,13 @@ export default function AppModal({
               </div>
             )}
 
-            <div className="flex flex-wrap items-center gap-3 pt-6 border-t border-black/10">
+            <div className="flex flex-wrap items-center gap-3 pt-6 border-t border-neutral-200">
               <button
                 onClick={() => onVote(app.id)}
-                className={`px-5 py-2 rounded-full text-sm font-medium transition-colors ${
+                className={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all ${
                   hasVoted
-                    ? 'bg-[#0000ff] text-white'
-                    : 'bg-[#d4d4f0] text-black hover:bg-[#c4c4e0]'
+                    ? 'bg-indigo-500 text-white shadow-sm'
+                    : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'
                 }`}
               >
                 {hasVoted ? 'Voted' : 'Vote'} ({app.votes})
@@ -96,11 +97,12 @@ export default function AppModal({
 
               <button
                 onClick={() => onFavorite(app.id)}
-                className="p-2 rounded-full hover:bg-white/40 transition-colors"
+                className="p-2.5 rounded-lg hover:bg-neutral-100 transition-colors"
+                aria-label={isFavorited ? 'Remove from favorites' : 'Add to favorites'}
               >
                 <Heart
                   size={20}
-                  className={isFavorited ? 'fill-[#ff1493] text-[#ff1493]' : 'text-black/40'}
+                  className={isFavorited ? 'fill-red-500 text-red-500' : 'text-neutral-400'}
                 />
               </button>
 
@@ -108,9 +110,9 @@ export default function AppModal({
                 href={app.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-2 bg-[#0000ff] text-white rounded-full text-sm font-medium hover:opacity-80 transition-opacity ml-auto"
+                className="flex items-center gap-2 px-5 py-2.5 bg-indigo-500 text-white rounded-lg text-sm font-medium hover:bg-indigo-600 transition-colors ml-auto shadow-sm"
               >
-                Visit
+                Visit Website
                 <ExternalLink size={16} />
               </a>
             </div>

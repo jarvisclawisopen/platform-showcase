@@ -16,7 +16,7 @@ export default function Home() {
     setApps(appsData as App[]);
   }, []);
 
-  const categories = ['All', 'AI', 'Crypto', 'Design', 'Development', 'Marketing', 'Other'];
+  const categories = ['All', 'AI', 'Crypto', 'Design', 'Development', 'Finance', 'Marketing', 'Productivity', 'Research', 'Security', 'Other'];
 
   const filteredApps = selectedCategory === 'All' 
     ? apps 

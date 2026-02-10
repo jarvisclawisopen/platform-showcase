@@ -1,16 +1,16 @@
 export default function Footer() {
   return (
-    <footer className="pt-16 pb-8 border-t border-gray-200">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-[#666] text-sm">
-          © 2026 Platform Showcase. All rights reserved.
+    <footer className="pt-20 pb-12 border-t border-neutral-200">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+        <p className="text-neutral-500 text-sm">
+          © 2026 Platform Showcase
         </p>
-        <div className="flex gap-6">
+        <div className="flex gap-8">
           <a 
-            href="https://github.com" 
+            href="https://github.com/jarvisclawisopen/platform-showcase" 
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#666] hover:text-[#1A1A1A] text-sm transition-colors"
+            className="text-neutral-600 hover:text-indigo-500 text-sm transition-colors font-medium"
           >
             GitHub
           </a>
@@ -18,7 +18,7 @@ export default function Footer() {
             href="https://twitter.com" 
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#666] hover:text-[#1A1A1A] text-sm transition-colors"
+            className="text-neutral-600 hover:text-indigo-500 text-sm transition-colors font-medium"
           >
             Twitter
           </a>

@@ -8,18 +8,18 @@ interface FilterButtonsProps {
 
 export default function FilterButtons({ categories, selected, onSelect }: FilterButtonsProps) {
   return (
-    <nav className="mb-12 md:mb-16" role="navigation" aria-label="Category filters">
-      <div className="flex flex-wrap gap-3">
+    <nav className="mb-12" role="navigation" aria-label="Category filters">
+      <div className="flex flex-wrap gap-2">
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => onSelect(category)}
             className={`
-              px-5 py-2.5 rounded-full font-medium text-sm
-              transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]
+              px-6 py-2.5 rounded-full font-medium text-sm
+              transition-all duration-200
               ${selected === category
-                ? 'bg-[#1A1A1A] text-white'
-                : 'bg-white text-[#666] hover:bg-[#F0F0F0] hover:text-[#1A1A1A]'
+                ? 'bg-indigo-500 text-white shadow-sm'
+                : 'bg-white text-neutral-600 hover:bg-neutral-50 border border-neutral-200'
               }
             `}
             aria-pressed={selected === category}
