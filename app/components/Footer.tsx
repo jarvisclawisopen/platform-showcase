@@ -1,33 +1,47 @@
+'use client';
+
+import { Button } from '@/components/ui/button';
+
 export default function Footer() {
   return (
-    <footer className="mt-20 pt-12 pb-8">
-      <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-8 border border-white/20 shadow-2xl">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer className="relative z-10 border-t border-slate-700/50 bg-slate-900/50 backdrop-blur-xl">
+      <div className="container-max px-6 py-16">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
-            <p className="text-white font-bold text-lg mb-1">
+            <h3 className="text-xl font-semibold text-white mb-2">
               Platform Showcase
-            </p>
-            <p className="text-white/70 text-sm">
+            </h3>
+            <p className="text-slate-400 text-sm font-normal">
               © 2026 All rights reserved
             </p>
           </div>
+
           <div className="flex gap-4">
-            <a 
-              href="https://github.com/jarvisclawisopen/platform-showcase" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-white/90 hover:bg-white text-gray-900 font-bold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+            <Button
+              asChild
+              variant="outline"
+              className="bg-slate-800 border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-white font-medium"
             >
-              GitHub
-            </a>
-            <a 
-              href="https://twitter.com" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+              <a
+                href="https://github.com/jarvisclawisopen/platform-showcase"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </Button>
+            <Button
+              asChild
+              className="bg-cyan-500 hover:bg-cyan-600 text-white border-cyan-400 font-medium"
             >
-              Twitter
-            </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+            </Button>
           </div>
         </div>
       </div>

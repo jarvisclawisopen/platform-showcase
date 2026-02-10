@@ -1,89 +1,86 @@
 'use client';
 
+import { Card as ShadcnCard, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import type { App } from '../types';
 
 interface CardProps {
   app: App;
 }
 
-const categoryGradients: Record<string, string> = {
-  'AI': 'from-blue-400 via-blue-500 to-cyan-500',
-  'Crypto': 'from-yellow-400 via-orange-500 to-red-500',
-  'Design': 'from-pink-400 via-rose-500 to-red-500',
-  'Development': 'from-green-400 via-emerald-500 to-teal-500',
-  'Finance': 'from-indigo-400 via-purple-500 to-pink-500',
-  'Marketing': 'from-red-400 via-pink-500 to-rose-500',
-  'Productivity': 'from-teal-400 via-cyan-500 to-blue-500',
-  'Research': 'from-violet-400 via-purple-500 to-indigo-500',
-  'Security': 'from-gray-600 via-gray-700 to-gray-900',
-  'Other': 'from-gray-400 via-gray-500 to-gray-600',
+const categoryColors: Record<string, { badge: string; border: string }> = {
+  'AI': { badge: 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30', border: 'group-hover:border-cyan-400/60' },
+  'Crypto': { badge: 'bg-amber-500/10 text-amber-400 border-amber-500/30', border: 'group-hover:border-amber-400/60' },
+  'Design': { badge: 'bg-pink-500/10 text-pink-400 border-pink-500/30', border: 'group-hover:border-pink-400/60' },
+  'Development': { badge: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30', border: 'group-hover:border-emerald-400/60' },
+  'Finance': { badge: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/30', border: 'group-hover:border-indigo-400/60' },
+  'Marketing': { badge: 'bg-rose-500/10 text-rose-400 border-rose-500/30', border: 'group-hover:border-rose-400/60' },
+  'Productivity': { badge: 'bg-teal-500/10 text-teal-400 border-teal-500/30', border: 'group-hover:border-teal-400/60' },
+  'Research': { badge: 'bg-purple-500/10 text-purple-400 border-purple-500/30', border: 'group-hover:border-purple-400/60' },
+  'Security': { badge: 'bg-slate-500/10 text-slate-400 border-slate-500/30', border: 'group-hover:border-slate-400/60' },
+  'Other': { badge: 'bg-gray-500/10 text-gray-400 border-gray-500/30', border: 'group-hover:border-gray-400/60' },
 };
 
 export default function Card({ app }: CardProps) {
-  const gradientClass = categoryGradients[app.category] || 'from-gray-400 to-gray-600';
+  const colors = categoryColors[app.category] || categoryColors['Other'];
   
   return (
     <a
       href={app.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="
-        group block bg-white rounded-2xl overflow-hidden
-        shadow-xl hover:shadow-2xl
-        transform hover:-translate-y-2 hover:scale-105
-        transition-all duration-300
-        border-2 border-transparent hover:border-white
-      "
-      role="listitem"
-      aria-label={`View ${app.name}`}
+      className="group block"
     >
-      {/* Gradient Header */}
-      <div className={`w-full h-32 bg-gradient-to-br ${gradientClass} 
-                      flex items-center justify-center relative overflow-hidden`}>
-        <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
-        <span className="text-6xl font-bold text-white/90 drop-shadow-lg relative z-10">
-          {app.name.charAt(0)}
-        </span>
-      </div>
-
-      {/* Content */}
-      <div className="p-6 bg-white">
-        {/* Category Badge */}
-        <div className="mb-3">
-          <span className={`inline-block px-3 py-1 bg-gradient-to-r ${gradientClass} text-white text-xs font-bold rounded-full shadow-md`}>
-            {app.category}
-          </span>
-        </div>
-
-        {/* Title */}
-        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:${gradientClass} transition-all">
-          {app.name}
-        </h3>
-
-        {/* Description */}
-        <p className="text-gray-600 text-sm mb-4 line-clamp-2 leading-relaxed">
-          {app.description}
-        </p>
-
-        {/* Tags */}
-        <div className="flex flex-wrap gap-2">
-          {app.tags.slice(0, 3).map((tag, index) => (
-            <span
-              key={index}
-              className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-semibold rounded-lg hover:bg-gray-200 transition-colors"
+      <ShadcnCard className={`
+        bg-slate-900 border border-slate-700 rounded-2xl card-shadow card-hover
+        ${colors.border}
+      `}>
+        <CardHeader className="space-y-3 p-6">
+          {/* Category Badge */}
+          <div>
+            <Badge 
+              variant="outline" 
+              className={`${colors.badge} text-xs font-semibold`}
             >
-              #{tag}
-            </span>
-          ))}
-        </div>
+              {app.category}
+            </Badge>
+          </div>
 
-        {/* Pricing Badge */}
-        <div className="mt-4 pt-4 border-t border-gray-100">
-          <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">
-            {app.pricingModel}
-          </span>
-        </div>
-      </div>
+          {/* Title */}
+          <CardTitle className="text-xl font-semibold text-white group-hover:text-cyan-400 transition-colors">
+            {app.name}
+          </CardTitle>
+
+          {/* Description */}
+          <CardDescription className="text-slate-400 text-sm leading-relaxed line-clamp-2 font-normal">
+            {app.description}
+          </CardDescription>
+        </CardHeader>
+
+        <CardContent className="px-6 pb-6 space-y-4">
+          {/* Tags */}
+          {app.tags && app.tags.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {app.tags.slice(0, 3).map((tag, index) => (
+                <Badge
+                  key={index}
+                  variant="secondary"
+                  className="bg-slate-800 text-slate-300 border-slate-600 text-xs font-medium"
+                >
+                  {tag}
+                </Badge>
+              ))}
+            </div>
+          )}
+
+          {/* Pricing */}
+          <div className="pt-3 border-t border-slate-700/50">
+            <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+              {app.pricingModel}
+            </span>
+          </div>
+        </CardContent>
+      </ShadcnCard>
     </a>
   );
 }
