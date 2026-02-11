@@ -4,14 +4,14 @@ import { Button } from '@/components/ui/button';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 bg-white mt-24">
+    <footer className="border-t border-slate-800/50 bg-slate-950/50 backdrop-blur-xl mt-24">
       <div className="container-max px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <h3 className="text-lg font-semibold text-gray-900 mb-1">
+            <h3 className="text-lg font-semibold text-white mb-1 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
               Platform Showcase
             </h3>
-            <p className="text-gray-600 text-sm">
+            <p className="text-slate-400 text-sm">
               © 2026 All rights reserved
             </p>
           </div>
@@ -20,7 +20,7 @@ export default function Footer() {
             <Button
               asChild
               variant="outline"
-              className="bg-white border-gray-300 text-gray-700 hover:bg-gray-50"
+              className="bg-slate-900/50 border-slate-800/50 text-slate-300 hover:bg-slate-800/50 backdrop-blur-xl"
             >
               <a
                 href="https://github.com/jarvisclawisopen/platform-showcase"
@@ -32,7 +32,7 @@ export default function Footer() {
             </Button>
             <Button
               asChild
-              className="bg-gray-900 hover:bg-gray-800 text-white"
+              className="bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-xl"
             >
               <a
                 href="https://twitter.com"

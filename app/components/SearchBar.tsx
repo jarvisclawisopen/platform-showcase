@@ -1,9 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
-import { Input } from '@/components/ui/input';
-import { Search, X } from 'lucide-react';
-import { useAppStore } from '@/lib/store';
+import { Search } from 'lucide-react';
 
 interface SearchBarProps {
   value: string;
@@ -12,63 +9,32 @@ interface SearchBarProps {
 }
 
 export default function SearchBar({ value, onChange, totalResults }: SearchBarProps) {
-  const inputRef = useRef<HTMLInputElement>(null);
-  const { addRecentSearch } = useAppStore();
-
-  // Keyboard shortcut: Cmd+K or Ctrl+K
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-        e.preventDefault();
-        inputRef.current?.focus();
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-
-  const handleChange = (newValue: string) => {
-    onChange(newValue);
-    if (newValue.length > 2) {
-      addRecentSearch(newValue);
-    }
-  };
-
-  const handleClear = () => {
-    onChange('');
-    inputRef.current?.focus();
-  };
-
   return (
-    <div className="relative group">
-      <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400 group-focus-within:text-gray-900 transition-colors" />
-      
-      <Input
-        ref={inputRef}
-        type="text"
-        placeholder="Search platforms... (⌘K)"
-        value={value}
-        onChange={(e) => handleChange(e.target.value)}
-        className="pl-12 pr-24 h-14 bg-white border-gray-300 text-gray-900 placeholder:text-gray-400 focus:border-gray-900 focus:ring-gray-900/10 rounded-xl shadow-sm"
-      />
-
-      <div className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center gap-2">
-        {value && (
-          <>
-            <span className="text-xs text-gray-500 font-medium">
-              {totalResults} results
-            </span>
-            <button
-              onClick={handleClear}
-              className="p-1 hover:bg-gray-100 rounded-md transition-colors"
-              aria-label="Clear search"
-            >
-              <X className="h-4 w-4 text-gray-400" />
-            </button>
-          </>
-        )}
+    <div className="relative">
+      <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+        <Search className="h-5 w-5 text-slate-500" />
       </div>
+      <input
+        type="text"
+        placeholder="Search platforms, tags, or categories..."
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="
+          w-full pl-12 pr-4 py-4 rounded-2xl text-base
+          bg-slate-900/50 backdrop-blur-xl
+          border border-slate-800/50
+          text-white placeholder:text-slate-500
+          focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50
+          transition-all duration-200
+        "
+      />
+      {value && (
+        <div className="absolute inset-y-0 right-0 pr-4 flex items-center">
+          <span className="text-sm text-slate-400">
+            {totalResults} result{totalResults !== 1 ? 's' : ''}
+          </span>
+        </div>
+      )}
     </div>
   );
 }

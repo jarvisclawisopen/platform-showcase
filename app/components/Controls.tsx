@@ -51,12 +51,12 @@ export default function Controls({
       <div className="flex flex-wrap items-center gap-3">
         {/* Sort */}
         <div className="flex items-center gap-2">
-          <span className="text-sm text-gray-600 font-medium">Sort:</span>
+          <span className="text-sm text-slate-400 font-medium">Sort:</span>
           <Select value={sortBy} onValueChange={onSortChange}>
-            <SelectTrigger className="w-[180px] bg-white border-gray-300 text-gray-900">
+            <SelectTrigger className="w-[180px] bg-slate-900/50 backdrop-blur-xl border-slate-800/50 text-white">
               <SelectValue />
             </SelectTrigger>
-            <SelectContent className="bg-white border-gray-300">
+            <SelectContent className="bg-slate-900 border-slate-800 text-white">
               <SelectItem value="name">Name (A-Z)</SelectItem>
               <SelectItem value="category">Category</SelectItem>
               <SelectItem value="pricing">Pricing</SelectItem>
@@ -66,13 +66,13 @@ export default function Controls({
         </div>
 
         {/* View Toggle */}
-        <div className="flex items-center gap-1 bg-white rounded-lg p-1 border border-gray-300">
+        <div className="flex items-center gap-1 bg-slate-900/50 backdrop-blur-xl rounded-lg p-1 border border-slate-800/50">
           <Button
             variant="ghost"
             size="sm"
             onClick={() => setViewMode('grid')}
             className={`${
-              viewMode === 'grid' ? 'bg-gray-100 text-gray-900' : 'text-gray-500'
+              viewMode === 'grid' ? 'bg-white/10 text-white' : 'text-slate-400'
             }`}
           >
             <Grid3x3 className="h-4 w-4" />
@@ -82,7 +82,7 @@ export default function Controls({
             size="sm"
             onClick={() => setViewMode('compact')}
             className={`${
-              viewMode === 'compact' ? 'bg-gray-100 text-gray-900' : 'text-gray-500'
+              viewMode === 'compact' ? 'bg-white/10 text-white' : 'text-slate-400'
             }`}
           >
             <List className="h-4 w-4" />
@@ -96,8 +96,8 @@ export default function Controls({
           onClick={onToggleFavorites}
           className={
             showFavoritesOnly
-              ? 'bg-red-500 hover:bg-red-600 text-white border-red-400'
-              : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
+              ? 'bg-red-500/20 hover:bg-red-500/30 text-red-400 border-red-500/50 backdrop-blur-xl'
+              : 'bg-slate-900/50 border-slate-800/50 text-slate-300 hover:bg-slate-800/50 backdrop-blur-xl'
           }
         >
           <Heart className={`h-4 w-4 mr-2 ${showFavoritesOnly ? 'fill-current' : ''}`} />
@@ -110,7 +110,7 @@ export default function Controls({
             variant="ghost"
             size="sm"
             onClick={onClearFilters}
-            className="text-gray-500 hover:text-gray-900 hover:bg-gray-100"
+            className="text-slate-400 hover:text-white hover:bg-white/10"
           >
             <X className="h-4 w-4 mr-2" />
             Clear Filters
@@ -120,7 +120,7 @@ export default function Controls({
 
       {/* Pricing Filters */}
       <div>
-        <span className="text-sm text-gray-600 font-medium mb-2 block">Pricing:</span>
+        <span className="text-sm text-slate-400 font-medium mb-2 block">Pricing:</span>
         <div className="flex flex-wrap gap-2">
           {pricingOptions.map((option) => {
             const isActive = pricingFilter.includes(option);
@@ -128,10 +128,10 @@ export default function Controls({
               <Badge
                 key={option}
                 variant={isActive ? 'default' : 'outline'}
-                className={`cursor-pointer text-xs font-medium transition-all ${
+                className={`cursor-pointer text-xs font-medium transition-all backdrop-blur-xl ${
                   isActive
-                    ? 'bg-gray-900 hover:bg-gray-800 text-white border-gray-900'
-                    : 'bg-white hover:bg-gray-50 text-gray-700 border-gray-300'
+                    ? 'bg-white/20 hover:bg-white/30 text-white border-white/40'
+                    : 'bg-slate-900/50 hover:bg-slate-800/50 text-slate-300 border-slate-800/50'
                 }`}
                 onClick={() => togglePricingFilter(option)}
               >

@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Toaster } from 'sonner';
+import { AuroraBackground } from './aurora-background';
 import Header from './Header';
 import SearchBar from './SearchBar';
 import Controls from './Controls';
@@ -164,17 +165,19 @@ export default function HomeContent() {
     <>
       <Toaster 
         position="bottom-right" 
-        theme="light"
+        theme="dark"
         toastOptions={{
           style: {
-            background: '#ffffff',
-            color: '#1a1a1a',
-            border: '1px solid #e5e7eb',
+            background: 'rgba(15, 23, 42, 0.8)',
+            backdropFilter: 'blur(12px)',
+            color: '#e5e7eb',
+            border: '1px solid rgba(148, 163, 184, 0.3)',
           },
         }}
       />
       
-      <main className="min-h-screen">
+      <AuroraBackground>
+        <main className="min-h-screen w-full relative z-10">
         <Header
           categories={categories}
           selectedCategory={selectedCategory}
@@ -203,9 +206,9 @@ export default function HomeContent() {
 
           {/* Results Info */}
           {hasActiveFilters && (
-            <div className="text-sm text-gray-600">
-              Showing <span className="text-gray-900 font-semibold">{filteredApps.length}</span> of{' '}
-              <span className="text-gray-900 font-semibold">{apps.length}</span> platforms
+            <div className="text-sm text-slate-400">
+              Showing <span className="text-white font-semibold">{filteredApps.length}</span> of{' '}
+              <span className="text-white font-semibold">{apps.length}</span> platforms
             </div>
           )}
         </div>
@@ -214,6 +217,7 @@ export default function HomeContent() {
 
         <Footer />
       </main>
+      </AuroraBackground>
 
       <DetailModal app={selectedApp} isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>

@@ -14,16 +14,16 @@ interface CompactCardProps {
 }
 
 const categoryColors: Record<string, string> = {
-  'AI': 'bg-blue-100 text-blue-700 border-blue-200',
-  'Crypto': 'bg-orange-100 text-orange-700 border-orange-200',
-  'Design': 'bg-pink-100 text-pink-700 border-pink-200',
-  'Development': 'bg-emerald-100 text-emerald-700 border-emerald-200',
-  'Finance': 'bg-indigo-100 text-indigo-700 border-indigo-200',
-  'Marketing': 'bg-rose-100 text-rose-700 border-rose-200',
-  'Productivity': 'bg-teal-100 text-teal-700 border-teal-200',
-  'Research': 'bg-purple-100 text-purple-700 border-purple-200',
-  'Security': 'bg-gray-100 text-gray-700 border-gray-200',
-  'Other': 'bg-gray-100 text-gray-700 border-gray-200',
+  'AI': 'bg-blue-500/20 text-blue-300 border-blue-500/40',
+  'Crypto': 'bg-orange-500/20 text-orange-300 border-orange-500/40',
+  'Design': 'bg-pink-500/20 text-pink-300 border-pink-500/40',
+  'Development': 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40',
+  'Finance': 'bg-indigo-500/20 text-indigo-300 border-indigo-500/40',
+  'Marketing': 'bg-rose-500/20 text-rose-300 border-rose-500/40',
+  'Productivity': 'bg-teal-500/20 text-teal-300 border-teal-500/40',
+  'Research': 'bg-purple-500/20 text-purple-300 border-purple-500/40',
+  'Security': 'bg-gray-500/20 text-gray-300 border-gray-500/40',
+  'Other': 'bg-slate-500/20 text-slate-300 border-slate-500/40',
 };
 
 export default function CompactCard({ app, onOpenDetail, index = 0 }: CompactCardProps) {
@@ -49,19 +49,19 @@ export default function CompactCard({ app, onOpenDetail, index = 0 }: CompactCar
     >
       <div
         onClick={() => onOpenDetail(app)}
-        className="group flex items-center gap-4 p-4 bg-white border border-gray-200 rounded-xl card-hover cursor-pointer"
+        className="group flex items-center gap-4 p-4 bg-slate-900/50 backdrop-blur-xl border border-slate-800/50 rounded-xl card-hover cursor-pointer"
       >
         {/* Left: Category Badge */}
-        <Badge variant="outline" className={`${colors} text-xs font-semibold shrink-0`}>
+        <Badge variant="outline" className={`${colors} text-xs font-semibold shrink-0 backdrop-blur-xl`}>
           {app.category}
         </Badge>
 
         {/* Middle: Content */}
         <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-semibold text-gray-900 group-hover:text-gray-700 transition-colors truncate">
+          <h3 className="text-lg font-semibold text-white group-hover:text-blue-400 transition-colors truncate">
             {app.name}
           </h3>
-          <p className="text-gray-600 text-sm truncate">{app.description}</p>
+          <p className="text-slate-400 text-sm truncate">{app.description}</p>
         </div>
 
         {/* Right: Tags & Actions */}
@@ -72,7 +72,7 @@ export default function CompactCard({ app, onOpenDetail, index = 0 }: CompactCar
               <Badge
                 key={index}
                 variant="secondary"
-                className="bg-gray-100 text-gray-700 border-gray-200 text-xs font-medium"
+                className="bg-white/10 text-slate-300 border-white/20 text-xs font-medium backdrop-blur-xl"
               >
                 {tag}
               </Badge>
@@ -80,7 +80,7 @@ export default function CompactCard({ app, onOpenDetail, index = 0 }: CompactCar
           </div>
 
           {/* Pricing */}
-          <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider hidden sm:block">
+          <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider hidden sm:block">
             {app.pricingModel}
           </span>
 
@@ -89,12 +89,12 @@ export default function CompactCard({ app, onOpenDetail, index = 0 }: CompactCar
             <Button
               variant="ghost"
               size="icon"
-              className="h-8 w-8 hover:bg-gray-100"
+              className="h-8 w-8 hover:bg-white/10"
               onClick={handleFavoriteClick}
             >
               <Heart
                 className={`h-4 w-4 ${
-                  favorite ? 'fill-red-500 text-red-500' : 'text-gray-400'
+                  favorite ? 'fill-red-500 text-red-500' : 'text-slate-400'
                 }`}
               />
             </Button>
@@ -103,7 +103,7 @@ export default function CompactCard({ app, onOpenDetail, index = 0 }: CompactCar
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleExternalClick}
-              className="p-2 text-gray-600 hover:text-gray-900 transition-colors"
+              className="p-2 text-slate-400 hover:text-white transition-colors"
             >
               <ExternalLink className="h-4 w-4" />
             </a>
